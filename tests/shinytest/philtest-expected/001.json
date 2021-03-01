@@ -1,10 +1,10 @@
 {
   "input": {
-    "api": "aspirin",
-    "end_date": "2021-02-28",
+    "api": "tylenol",
+    "end_date": "2021-03-02",
     "seriousness": "1",
-    "start_date": "2004-01-15",
-    "submit": 1
+    "start_date": "2004-01-01",
+    "submit": 3
   },
   "output": {
     "download_button": {
@@ -30,7 +30,7 @@
     },
     "message": "5) Download the data:",
     "plt": {
-      "src": "[image data sha1: c1aa5ce4b4192991aabdd1a1d6f5c752ef9f1823]",
+      "src": "[image data sha1: 7153b08a4c57c9129bc56852854aecd3ca03358c]",
       "width": 714,
       "height": 640,
       "alt": "Plot object",
@@ -50,20 +50,20 @@
             "domain": {
               "left": 0.4,
               "right": 10.6,
-              "bottom": -1275.395,
-              "top": 26783.295,
+              "bottom": -631.675,
+              "top": 13265.175,
               "discrete_limits": {
                 "x": [
-                  "DYSPNOEA",
                   "FATIGUE",
                   "NAUSEA",
+                  "PAIN",
+                  "DYSPNOEA",
+                  "HEADACHE",
+                  "DRUG\nINEFFECTIVE",
                   "DIARRHOEA",
-                  "FALL",
-                  "DIZZINESS",
-                  "PNEUMONIA",
-                  "MYOCARDIAL\nINFARCTION",
-                  "GASTROINTESTINAL\nHAEMORRHAGE",
-                  "ASTHENIA"
+                  "VOMITING",
+                  "DEATH",
+                  "ARTHRALGIA"
                 ]
               }
             },
@@ -74,7 +74,7 @@
             "range": {
               "left": 65.8080286815069,
               "right": 708.520547945205,
-              "bottom": 542.540009394205,
+              "bottom": 561.795380487955,
               "top": 51.6976617454172
             }
           }

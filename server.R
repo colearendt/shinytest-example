@@ -62,9 +62,7 @@ shinyServer(function(input, output) {
    })
 
    data_url = reactive({
-       message("data url")
        req(api(), start_date(), end_date())
-       message("data url done")
        paste0(
            'https://api.fda.gov/drug/event.json?search=(patient.drug.medicinalproduct:',
            api(),
@@ -87,14 +85,17 @@ shinyServer(function(input, output) {
    # retrieve data
    observeEvent(
        input$submit, {
+           showNotification(paste0("Submitted request for \"", api(), "\""), type = "default")
          tryCatch(
              {
                raw_data <-  fromJSON(url(data_url()))
                api_data(clean_data(raw_data))
                result_message("5) Download the data:")
                display_drug(api())
+               showNotification("DONE!")
              },
              error = function(e){
+                 showNotification(paste0("ERROR. No results for \"", api(), "\""), type = "error")
                  result_message("Your request did not return any result.<br>Please try again!")
                  api_data(NULL)
              }
