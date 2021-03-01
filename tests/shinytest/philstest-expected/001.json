@@ -1,0 +1,81 @@
+{
+  "input": {
+    "api": "acetaminophen",
+    "end_date": "2018-02-21",
+    "seriousness": "0",
+    "start_date": "2004-01-01"
+  },
+  "output": {
+    "download_button": {
+      "html": "<a id=\"download_data\" class=\"btn btn-default shiny-download-link \" href=\"\" target=\"_blank\" download>\n  <i class=\"fa fa-download\"><\/i>\n  Download CSV\n<\/a>",
+      "deps": [
+        {
+          "name": "font-awesome",
+          "version": "4.7.0",
+          "src": {
+            "href": "shared/font-awesome"
+          },
+          "meta": null,
+          "script": null,
+          "stylesheet": "css/font-awesome.min.css",
+          "head": null,
+          "attachment": null,
+          "package": null,
+          "all_files": true
+        }
+      ]
+    },
+    "message": "5) Download the data:",
+    "plt": {
+      "src": "[image data sha1: dd5e3d4eb733e5df671ab196ef02429c3bc950fc]",
+      "width": 714,
+      "height": 640,
+      "coordmap": [
+        {
+          "panel": 1,
+          "row": 1,
+          "col": 1,
+          "panel_vars": {
+
+          },
+          "log": {
+            "x": null,
+            "y": null
+          },
+          "domain": {
+            "left": 0.4,
+            "right": 10.6,
+            "bottom": -1066.065,
+            "top": 22387.365
+          },
+          "mapping": {
+            "x": "reorder(Event, Count, FUN = function(x) -x)",
+            "y": "Count"
+          },
+          "range": {
+            "left": 65.7704109589041,
+            "right": 708.520547945206,
+            "bottom": 563.393004013861,
+            "top": 49.5667945205479
+          }
+        }
+      ]
+    },
+    "tble": {
+      "colnames": [
+        "Rank",
+        "Event",
+        "Count",
+        "Frequency"
+      ],
+      "options": null,
+      "evalOptions": null,
+      "searchDelay": 500,
+      "callback": "function(oTable) {}",
+      "escape": true
+    }
+  },
+  "export": {
+
+  }
+}
