@@ -8,8 +8,8 @@ shinyUI(
         fluidRow(
             column(3,
                 br(),
-                p("The OpenFDA project makes adverse-event data gathered after January 1, 2004, 
-                  available via a public-access portal that enables developers to quickly and 
+                p("The OpenFDA project makes adverse-event data gathered after January 1, 2004,
+                  available via a public-access portal that enables developers to quickly and
                   easily use it in applications. The project is hosted at:"),
                 a(href="https://open.fda.gov/", "open.fda.gov"),
                 br(),
@@ -21,7 +21,7 @@ shinyUI(
                 dateInput('start_date', '2) Enter the start date:', min = '2004-01-01', value = '2004-01-01'),
                 dateInput('end_date', '3) Enter the end date:', min = '2004-01-02'),
                 radioButtons('seriousness', '4) Filter by seriousness:', choices = c("All" = 0, "Serious" = 1, "Non-serious" = 2)),
-                submitButton('Submit Request'),
+                actionButton("submit", "Submit Request"),
                 br(),
                 strong(htmlOutput("message")),
                 uiOutput("download_button"),
