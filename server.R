@@ -4,7 +4,6 @@ library(ggplot2)
 library(stringr)
 
 datafile = NULL
-current_api = 'empty'
 
 adverse_event_plot <- function(data, api_name) {
   plt <- ggplot(data=data, aes(x=reorder(Event,Count,FUN=function(x) -x), y=Count)) +
@@ -47,8 +46,7 @@ shinyServer(function(input, output) {
 
    result_message <- reactiveVal("Your request did not return any result.<br>Please try again!")
 
-   current_api <- 'empty'
-   fail <- FALSE
+   display_drug <- reactiveVal("")
 
    api <- reactive(gsub(' ', '+', tolower(input$api))) # to lowercase, then replace spaces with plus signs
    start_date <- reactive(as.character(input$start_date))
@@ -89,13 +87,12 @@ shinyServer(function(input, output) {
    # retrieve data
    observeEvent(
        input$submit, {
-           message("observe fired")
          tryCatch(
              {
                raw_data <-  fromJSON(url(data_url()))
                api_data(clean_data(raw_data))
                result_message("5) Download the data:")
-               message("complete request")
+               display_drug(api())
              },
              error = function(e){
                  result_message("Your request did not return any result.<br>Please try again!")
@@ -120,16 +117,21 @@ shinyServer(function(input, output) {
        })
 
   output$plt = renderPlot({
-      req(df_subset(), api())
-      return(adverse_event_plot(df_subset(), api()))
+      req(df_subset(), display_drug())
+      res <- tryCatch({
+          return(adverse_event_plot(df_subset(), display_drug()))
+      }, error = function(e) {
+          message(e)
+      })
+      return(res)
   })
 
 output$download_data <- downloadHandler(
        filename = function() {
-         paste0(current_api, '.csv')
+         paste0(display_drug(), '.csv')
        },
        content = function(file) {
-         write.csv(datafile, file, row.names = FALSE)
+         write.csv(api_data(), file, row.names = FALSE)
        }
      )
 
