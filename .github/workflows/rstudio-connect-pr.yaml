@@ -2,7 +2,7 @@ name: Deploy PR to Connect as a temporary app
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
