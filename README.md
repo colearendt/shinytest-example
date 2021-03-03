@@ -9,6 +9,10 @@ In order to run `shinytest`, you need to:
 
 - Install 
 
+## CI testing with `shinytest`
+
+TODO
+
 ## CI Deployment to RStudio Connect
 
 ### Using GitHub Actions
