@@ -1,0 +1,23 @@
+name: Deploy main to Connect
+on:
+  push:
+    branches: main
+
+jobs:
+  deploy:
+    name: Deploy the main branch to RStudio Connect
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Publish the app
+        uses: rstudio/actions/connect-publish@main
+        with:
+          url: https://colorado.rstudio.com/rsc/
+          api-key: ${{ secrets.CONNECT_API_KEY }}
+          access-type: all
+          # for more on app identifiers or multiple app deployments, see
+          # https://github.com/rstudio/actions/tree/main/connect-publish#dir
+          dir: |
+            ./:/shinytest-example-app
