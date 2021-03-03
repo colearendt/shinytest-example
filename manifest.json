@@ -2304,9 +2304,6 @@
     }
   },
   "files": {
-    ".Rprofile": {
-      "checksum": "57f9047cb06fdbef821b61f49e21406e"
-    },
     "packrat/desc/askpass": {
       "checksum": "94189e2591613758acecb70968843b7e"
     },
