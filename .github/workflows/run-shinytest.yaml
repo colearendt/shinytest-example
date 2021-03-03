@@ -62,7 +62,8 @@ jobs:
       #    sudo -s eval "$sysreqs"
       - name: Install dependencies
         run: |
-          remotes::install_deps(dependencies = TRUE)
+          install.packages("renv")
+          renv::restore()
         shell: Rscript {0}
 
       - name: Find PhantomJS path
