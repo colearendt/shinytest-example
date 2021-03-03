@@ -1,0 +1,13 @@
+steps:
+  - uses: actions/checkout@v2
+
+  - name: Publish some things
+    uses: rstudio/actions/connect-publish@main
+    with:
+      url: https://colorado.rstudio.com/rsc/
+      api-key: ${{ secrets.CONNECT_API_KEY }}
+      access-type: all
+      # for more on app identifiers, see
+      # https://github.com/rstudio/actions/tree/main/connect-publish#dir
+      dir: |
+        ./:/shinytest-example-app
