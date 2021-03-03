@@ -59,7 +59,8 @@ jobs:
           RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
         run: |
           sudo apt-get install -y \
-            libcurl4-openssl-dev
+            libcurl4-openssl-dev \
+            phantomjs
       - name: Install dependencies
         run: |
           install.packages("renv")

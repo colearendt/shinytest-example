@@ -13,9 +13,11 @@ In order to run `shinytest`, you need to:
 - If there are differences, view the differences with
 `shinytest::viewTestDiff(testnames = "mytest")` (for the `mytest` test)
 
-## CI testing with `shinytest`
+## CI testing with `shinytest` and GitHub Actions
 
-TODO
+- Create a
+[`.github/workflows/run-shinytest.yaml`](./.github/workflows/run-shinytest.yaml)
+file
 
 ## CI Deployment to RStudio Connect
 
@@ -43,7 +45,7 @@ RStudio Connect supports a "pull-based" git-backed deployment and polling.
 In this mode, Connect will watch a branch of your repository and deploy any new
 commits that it detects, depending upon a server-wide polling interval.
 
-[You can read more about the process here](TODO)
+[You can read more about the process here](https://docs.rstudio.com/connect/user/git-backed/)
 
 ## Future Development Work (for developers)
 
