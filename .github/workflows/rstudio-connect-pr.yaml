@@ -1,0 +1,25 @@
+name: Deploy PR to Connect as a temporary app
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy the PR to RStudio Connect
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Publish the PR
+        uses: rstudio/actions/connect-publish@main
+        with:
+          url: https://colorado.rstudio.com/rsc/
+          api-key: ${{ secrets.CONNECT_API_KEY }}
+          access-type: all
+          show-logs: true
+          # for more on app identifiers or multiple app deployments, see
+          # https://github.com/rstudio/actions/tree/main/connect-publish#dir
+          dir: |
+            ./:/pr/shinytest-example-app/${{ GITHUB_HEAD_REF }}
