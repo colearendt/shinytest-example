@@ -94,6 +94,12 @@ jobs:
           renv::activate()
           .libPaths()
           webdriver::install_phantomjs()
+          packageVersion("shinytest")
+          renv::status()
+          system("phantomjs --version")
+          options(install.packages.check.source = "no")
+          if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
+          system("phantomjs --version")
       - name: Run tests
         shell: Rscript {0}
         run: |
