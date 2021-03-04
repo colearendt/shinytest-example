@@ -82,7 +82,7 @@ jobs:
       #    key: ${{ runner.os }}-phantomjs
       #    restore-keys: ${{ runner.os }}-phantomjs
       - name: Session info
-        shell: Rescript {0}
+        shell: Rscript {0}
         run: |
           renv::activate()
           as.data.frame(library()$results)
