@@ -82,7 +82,8 @@ jobs:
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
-          renv::activate()
+          source("renv/activate.R")
+          .libPaths()
           system("phantomjs --version")
           options(install.packages.check.source = "no")
           if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
@@ -90,14 +91,14 @@ jobs:
       - name: Run tests
         shell: Rscript {0}
         run: |
-          renv::activate()
+          source("renv/activate.R")
           webdriver::install_phantomjs()
           system("phantomjs --version")
           shiny::runTests(".", assert = TRUE)
       - name: Check test results
         shell: Rscript {0}
         run: |
-          renv::activate()
+          source("renv/activate.R")
           results <- shinytest::textTestDiff()
           clean_results <- attr(results, "status")
           if (any(clean_results == "reject")) {
