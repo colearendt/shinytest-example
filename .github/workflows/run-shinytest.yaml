@@ -84,6 +84,8 @@ jobs:
         run: |
           source("renv/activate.R")
           .libPaths()
+          packageVersion("shinytest")
+          renv::status()
           system("phantomjs --version")
           options(install.packages.check.source = "no")
           if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
