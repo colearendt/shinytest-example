@@ -15,8 +15,10 @@ jobs:
       fail-fast: false
       matrix:
         config:
+          # disabled b/c shinytest on windows has an error
           #- {os: windows-latest, r: 'release'}
-          - {os: macOS-latest, r: 'release'}
+          # disabled due to race conditions / parallelism
+          #- {os: macOS-latest, r: 'release'}
           - {os: ubuntu-20.04, r: 'release', rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"}
 
     env:
@@ -86,6 +88,15 @@ jobs:
         shell: Rscript {0}
         run: |
           shiny::runTests(".", assert = TRUE)
+      - name: Check test results
+        shell: Rscript {0}
+        run: |
+          results <- shinytest::textTestDiff()
+          clean_results <- attr(results, "status")
+          if (any(clean_results == "reject")) {
+            cat(results)
+            stop("Failing tests on differences")
+          }
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@master

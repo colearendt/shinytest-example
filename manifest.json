@@ -2574,9 +2574,6 @@
     "tests/shinytest.R": {
       "checksum": "10f7ad8946705869312f720c766a381d"
     },
-    "tests/shinytest/.gitignore": {
-      "checksum": "8ff91e6cef309fdcf249219a3561a4de"
-    },
     "tests/shinytest/mytest-expected/001.download": {
       "checksum": "3984bbc104f09630294391b152037f80"
     },

@@ -3,6 +3,18 @@
 An example application (OpenFDA Adverse Events Data) for
 using and illustrating how `shinytest` works.
 
+## How to use this repository
+
+- Fork the repository for yourself
+- Check it out locally to see how `shinytest` works
+- Change the GitHub actions as discussed below
+    - Change the Connect URL to your own Connect URL
+    - Add your own `CONNECT_API_KEY` secret
+- Make "breaking changes" to the application and see the tests fail
+- Run the tests interactively yourself
+- Send a PR to _your own_ `main` branch (within your fork)
+- Use or improve this pattern for your own work!!
+
 ## Run `shinytest`
 
 In order to run `shinytest`, you need to:
@@ -18,6 +30,13 @@ In order to run `shinytest`, you need to:
 - Create a
 [`.github/workflows/run-shinytest.yaml`](./.github/workflows/run-shinytest.yaml)
 file
+- If the tests succeed, the workflow run will pass
+- If the tests differ or fail, the workflow run will fail
+- To review the results directly, you have to download the build artifacts
+- Alternatively, since tests are failing, it means that something about the
+application has changed. Tests may need to be updated (or code fixed) to address
+the changes. To do this, you can run the tests locally or address any code
+changes necessary
 
 ## CI Deployment to RStudio Connect
 
@@ -59,8 +78,12 @@ and encouraged!
 `usethis::use_github_action()` pattern
 - Make example `shinytest` actions that integrate more effectively with RStudio
 Connect for reviewing results, etc.
-- Fix the Windows shinytest running
-- Make system deps (on Ubuntu) run more effectively
+- Fix the Windows shinytest running (currently fails)
+- Make system deps (on Ubuntu) run more effectively / dynamically ([r-lib
+patterns](https://github.com/r-lib/actions) orient mostly around packages)
+- Package up more of these items as re-usable components to simplify the user workflows
+- Better patterns around using / accepting test changes, artifacts, etc.
+- Figure out cross-operating-system compatibility issues
 
 ## Future Exploration (for users)
 
