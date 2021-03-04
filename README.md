@@ -18,6 +18,13 @@ In order to run `shinytest`, you need to:
 - Create a
 [`.github/workflows/run-shinytest.yaml`](./.github/workflows/run-shinytest.yaml)
 file
+- If the tests succeed, the workflow run will pass
+- If the tests differ or fail, the workflow run will fail
+- To review the results directly, you have to download the build artifacts
+- Alternatively, since tests are failing, it means that something about the
+application has changed. Tests may need to be updated (or code fixed) to address
+the changes. To do this, you can run the tests locally or address any code
+changes necessary
 
 ## CI Deployment to RStudio Connect
 
@@ -59,8 +66,12 @@ and encouraged!
 `usethis::use_github_action()` pattern
 - Make example `shinytest` actions that integrate more effectively with RStudio
 Connect for reviewing results, etc.
-- Fix the Windows shinytest running
-- Make system deps (on Ubuntu) run more effectively
+- Fix the Windows shinytest running (currently fails)
+- Make system deps (on Ubuntu) run more effectively / dynamically ([r-lib
+patterns](https://github.com/r-lib/actions) orient mostly around packages)
+- Package up more of these items as re-usable components to simplify the user workflows
+- Better patterns around using / accepting test changes, artifacts, etc.
+- Figure out cross-operating-system compatibility issues
 
 ## Future Exploration (for users)
 
