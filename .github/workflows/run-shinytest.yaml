@@ -68,6 +68,7 @@ jobs:
       - name: Install dependencies
         run: |
           remotes::install_cran("renv")
+          source("renv/activate.R")
           renv::restore()
           as.data.frame(library()$results)
         shell: Rscript {0}
