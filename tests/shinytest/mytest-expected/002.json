@@ -30,7 +30,7 @@
     },
     "message": "5) Download the data:",
     "plt": {
-      "src": "[image data sha1: 92a5192d0b6c7b4a90716e76ff46ac5408d482c0]",
+      "src": "[image data sha1: a5617c3e76554d79acb81df421a68b5740828af6]",
       "width": 714,
       "height": 640,
       "alt": "Plot object",
@@ -72,10 +72,10 @@
               "y": "Count"
             },
             "range": {
-              "left": 65.0306849315069,
+              "left": 66.0306849315069,
               "right": 708.520547945205,
-              "bottom": 542.90067923369,
-              "top": 51.470904109589
+              "bottom": 541.034653829905,
+              "top": 52.470904109589
             }
           }
         ],
