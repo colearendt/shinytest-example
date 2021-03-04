@@ -1,6 +1,7 @@
 # from: https://github.com/rstudio/shiny-testing-gha-example/blob/single_platform_snapshot/.github/workflows/run-tests.yaml
 on:
-  push:
+  # need a way to get the branch ref when not on a pull_request...
+  #push:
   pull_request:
 
 name: Run shinytest
@@ -180,4 +181,4 @@ jobs:
           access-type: all
           show-logs: true
           dir: |
-            ./tests/shinytest/diff-viewer:/pr/shinytest-example-app/${{ runner.os.GITHUB_HEAD_REF }}-diff/
+            ./tests/shinytest/diff-viewer:/pr/shinytest-example-app/${{ github.head_ref }}-diff/
