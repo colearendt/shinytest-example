@@ -6,6 +6,7 @@ using and illustrating how `shinytest` works.
 ## How to use this repository
 
 - Fork the repository for yourself
+- Check it out locally to see how `shinytest` works
 - Change the GitHub actions as discussed below
     - Change the Connect URL to your own Connect URL
     - Add your own `CONNECT_API_KEY` secret
