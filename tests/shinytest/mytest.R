@@ -1,7 +1,7 @@
 app <- ShinyDriver$new("../../")
 app$snapshotInit("mytest")
 
-app$setInputs(api = "aspirin", timeout_ = 10000)
+app$setInputs(api = "aspirin", timeout_ = 30000)
 app$setInputs(start_date = "2004-01-15")
 app$setInputs(end_date = "2021-02-28")
 app$setInputs(seriousness = "1")
