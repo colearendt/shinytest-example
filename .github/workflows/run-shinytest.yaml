@@ -97,9 +97,87 @@ jobs:
             cat(results)
             stop("Failing tests on differences")
           }
+      - name: Produce test output widgets
+        if: failure()
+        shell: Rscript {0}
+        run: |
+          shinytest_files <- dir("tests/shinytest")
+          tests <- sub("\\.R$", "", shinytest_files[grepl(".*\\.R$", shinytest_files)])
+          output_dir <- "tests/shinytest/diff-viewer"
+          dir.create(output_dir, showWarnings = FALSE)
+          # save html widget diff results
+          invisible(lapply(tests, function(test) {
+            test_widget <- shinytest::viewTestDiffWidget(
+                testname = test
+            )
+            current_wd <- getwd()
+            setwd(output_dir)
+            output_file <- paste0(test, ".html")
+            htmlwidgets::saveWidget(
+              test_widget,
+              output_file
+            )
+            setwd(current_wd)
+          }))
+      - name: Produce test output display
+        if: failure()
+        run: |
+          cat tests/shinytest/diff-viewer/index.html < EOF
+          <html>
+            <head>
+              <script>
+                function setSrc(param) {
+                  iframe = document.getElementById("iframe")
+                  iframe.src = param + ".html"
+                }
+              </script>
+            </head>
+            <input id="mytest-button" type="button" value="mytest Results" onclick="setSrc('mytest');" />
+            <input id="philtest-button" type="button" value="philtest Results" onclick="setSrc('philtest');" />
+          <iframe id="iframe" src="mytest.html" style="width:100%; height:100%">
+          </iframe>
+          </html>
+          EOF
+          cat tests/shinytest/diff-viewer/manifest.json < EOF
+          {
+            "version": 1,
+            "locale": "en_US",
+            "platform": "3.6.3",
+            "metadata": {
+              "appmode": "static",
+              "primary_rmd": null,
+              "primary_html": "index.html",
+              "content_category": null,
+              "has_parameters": false
+            },
+            "packages": null,
+            "files": {
+              "index.html": {
+                "checksum": "682a7334024b7ecd44ae699ff5bf55e6"
+              },
+              "mytest.html": {
+                "checksum": "70d2ad9f7e33b602d40529ea2f80ae31"
+              },
+              "philtest.html": {
+                "checksum": "c9aa348bea0b0b1e993de4f2e062bd79"
+              }
+            },
+            "users": null
+          }
+          EOF
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@master
         with:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-tests
           path: tests
+      - name: Deploy test output widget to RStudio Connect
+        if: failure()
+        uses: rstudio/actions/connect-publish@main
+        with:
+          url: https://colorado.rstudio.com/rsc/
+          api-key: ${{ secrets.CONNECT_API_KEY }}
+          access-type: all
+          show-logs: true
+          dir: |
+            ./tests/shinytest/diff-viewer:/pr/shinytest-example-app/${{ runner.os.GITHUB_HEAD_REF }}-diff/
