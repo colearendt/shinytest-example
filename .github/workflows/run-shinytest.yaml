@@ -54,17 +54,20 @@ jobs:
       #    key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1
       #    restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
-      # TODO: Better sysreqs handling
       - name: Install system dependencies
         if: runner.os == 'Linux'
-        env:
-          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
+        shell: Rscript {0}
         run: |
-          sudo apt-get install -y \
-            libcurl4-openssl-dev
+          # do not activate
+          remotes::install_cran("renv")
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          lapply(unique(renv::dependencies()$Package), function(pkg) {
+            pak::pkg_system_requirements(execute = TRUE)
+          })
+
       - name: Install dependencies
         run: |
-          install.packages("renv")
+          remotes::install_cran("renv")
           renv::restore()
         shell: Rscript {0}
 
@@ -78,6 +81,11 @@ jobs:
       #    path: ${{ steps.phantomjs.outputs.path }}
       #    key: ${{ runner.os }}-phantomjs
       #    restore-keys: ${{ runner.os }}-phantomjs
+      - name: Session info
+        shell: Rescript {0}
+        run: |
+          renv::activate()
+          as.data.frame(library()$results)
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
