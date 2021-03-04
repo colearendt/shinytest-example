@@ -22,4 +22,4 @@ jobs:
           # for more on app identifiers or multiple app deployments, see
           # https://github.com/rstudio/actions/tree/main/connect-publish#dir
           dir: |
-            ./:/pr/shinytest-example-app/$GITHUB_HEAD_REF
+            ./:/pr/shinytest-example-app/${{ github.head_ref }}
