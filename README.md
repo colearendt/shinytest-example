@@ -3,6 +3,17 @@
 An example application (OpenFDA Adverse Events Data) for
 using and illustrating how `shinytest` works.
 
+## How to use this repository
+
+- Fork the repository for yourself
+- Change the GitHub actions as discussed below
+    - Change the Connect URL to your own Connect URL
+    - Add your own `CONNECT_API_KEY` secret
+- Make "breaking changes" to the application and see the tests fail
+- Run the tests interactively yourself
+- Send a PR to _your own_ `main` branch (within your fork)
+- Use or improve this pattern for your own work!!
+
 ## Run `shinytest`
 
 In order to run `shinytest`, you need to:
