@@ -46,13 +46,13 @@ jobs:
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
         shell: Rscript {0}
 
-      - name: Cache R packages
-        if: runner.os != 'Windows'
-        uses: actions/cache@v1
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1
-          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+      #- name: Cache R packages
+      #  if: runner.os != 'Windows'
+      #  uses: actions/cache@v1
+      #  with:
+      #    path: ${{ env.R_LIBS_USER }}
+      #    key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1
+      #    restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
       # TODO: Better sysreqs handling
       - name: Install system dependencies
@@ -67,6 +67,7 @@ jobs:
         run: |
           install.packages("renv")
           renv::restore()
+          renv::activate()
         shell: Rscript {0}
 
       - name: Find PhantomJS path
