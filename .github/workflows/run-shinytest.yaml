@@ -69,6 +69,7 @@ jobs:
         run: |
           remotes::install_cran("renv")
           renv::restore()
+          as.data.frame(library()$results)
         shell: Rscript {0}
 
       #- name: Find PhantomJS path
