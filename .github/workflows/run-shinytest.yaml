@@ -122,7 +122,7 @@ jobs:
       - name: Produce test output display
         if: failure()
         run: |
-          cat tests/shinytest/diff-viewer/index.html < EOF
+          cat << EOF > tests/shinytest/diff-viewer/index.html
           <html>
             <head>
               <script>
@@ -138,7 +138,7 @@ jobs:
           </iframe>
           </html>
           EOF
-          cat tests/shinytest/diff-viewer/manifest.json < EOF
+          cat << EOF > tests/shinytest/diff-viewer/manifest.json
           {
             "version": 1,
             "locale": "en_US",
