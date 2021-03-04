@@ -66,7 +66,6 @@ jobs:
         run: |
           install.packages("renv")
           renv::restore()
-          renv::activate()
         shell: Rscript {0}
 
       #- name: Find PhantomJS path
@@ -84,15 +83,12 @@ jobs:
         run: |
           renv::activate()
           system("phantomjs --version")
-          options(install.packages.check.source = "no")
-          if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
+          webdriver::install_phantomjs()
           system("phantomjs --version")
       - name: Run tests
         shell: Rscript {0}
         run: |
           renv::activate()
-          webdriver::install_phantomjs()
-          system("phantomjs --version")
           shiny::runTests(".", assert = TRUE)
       - name: Check test results
         shell: Rscript {0}
