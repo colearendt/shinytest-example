@@ -65,6 +65,7 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages("renv")
+          source("renv/activate.R")
           renv::restore()
           renv::activate()
         shell: Rscript {0}
