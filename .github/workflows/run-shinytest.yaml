@@ -89,11 +89,9 @@ jobs:
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
-          source("renv/activate.R")
+          renv::activate()
           .libPaths()
-          system("phantomjs --version")
           webdriver::install_phantomjs()
-          system("phantomjs --version")
       - name: Run tests
         shell: Rscript {0}
         run: |
