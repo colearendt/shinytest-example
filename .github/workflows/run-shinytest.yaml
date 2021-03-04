@@ -66,55 +66,45 @@ jobs:
           })
 
       - name: Install dependencies
+        shell: Rscript {0}
         run: |
           remotes::install_cran("renv")
           source("renv/activate.R")
           renv::restore()
-          as.data.frame(library()$results)
-        shell: Rscript {0}
 
-      #- name: Find PhantomJS path
-      #  id: phantomjs
-      #  run: |
-      #    echo "::set-output name=path::$(Rscript -e 'cat(shinytest:::phantom_paths()[[1]])')"
-      #- name: Cache PhantomJS
-      #  uses: actions/cache@v1
-      #  with:
-      #    path: ${{ steps.phantomjs.outputs.path }}
-      #    key: ${{ runner.os }}-phantomjs
-      #    restore-keys: ${{ runner.os }}-phantomjs
-      - name: Session info
-        shell: Rscript {0}
+      - name: Find PhantomJS path
+        id: phantomjs
         run: |
-          renv::activate()
-          as.data.frame(library()$results)
+          echo "::set-output name=path::$(Rscript -e 'renv::activate(); cat(shinytest:::phantom_paths()[[1]])')"
+      - name: Cache PhantomJS
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.phantomjs.outputs.path }}
+          key: ${{ matrix.config.os }}-phantomjs
+          restore-keys: ${{ matrix.config.os }}-phantomjs
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
           renv::activate()
-          .libPaths()
-          webdriver::install_phantomjs()
-          packageVersion("shinytest")
-          renv::status()
-          system("phantomjs --version")
-          options(install.packages.check.source = "no")
           if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
-          system("phantomjs --version")
+
       - name: Run tests
         shell: Rscript {0}
         run: |
           renv::activate()
           shiny::runTests(".", assert = TRUE)
+
       - name: Check test results
         shell: Rscript {0}
         run: |
-          source("renv/activate.R")
+          renv::activate()
           results <- shinytest::textTestDiff()
           clean_results <- attr(results, "status")
           if (any(clean_results == "reject")) {
             cat(results)
             stop("Failing tests on differences")
           }
+
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@master
