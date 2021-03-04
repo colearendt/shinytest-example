@@ -62,7 +62,7 @@ jobs:
           remotes::install_cran("renv")
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
           lapply(unique(renv::dependencies()$Package), function(pkg) {
-            pak::pkg_system_requirements(execute = TRUE)
+            pak::pkg_system_requirements(pkg, execute = TRUE)
           })
 
       - name: Install dependencies
