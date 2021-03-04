@@ -61,8 +61,7 @@ jobs:
           RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
         run: |
           sudo apt-get install -y \
-            libcurl4-openssl-dev \
-            phantomjs
+            libcurl4-openssl-dev
       - name: Install dependencies
         run: |
           install.packages("renv")
@@ -70,26 +69,30 @@ jobs:
           renv::activate()
         shell: Rscript {0}
 
-      - name: Find PhantomJS path
-        id: phantomjs
-        run: |
-          echo "::set-output name=path::$(Rscript -e 'cat(shinytest:::phantom_paths()[[1]])')"
-      - name: Cache PhantomJS
-        uses: actions/cache@v1
-        with:
-          path: ${{ steps.phantomjs.outputs.path }}
-          key: ${{ runner.os }}-phantomjs
-          restore-keys: ${{ runner.os }}-phantomjs
+      #- name: Find PhantomJS path
+      #  id: phantomjs
+      #  run: |
+      #    echo "::set-output name=path::$(Rscript -e 'cat(shinytest:::phantom_paths()[[1]])')"
+      #- name: Cache PhantomJS
+      #  uses: actions/cache@v1
+      #  with:
+      #    path: ${{ steps.phantomjs.outputs.path }}
+      #    key: ${{ runner.os }}-phantomjs
+      #    restore-keys: ${{ runner.os }}-phantomjs
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
           renv::activate()
+          system("phantomjs --version")
           options(install.packages.check.source = "no")
           if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
+          system("phantomjs --version")
       - name: Run tests
         shell: Rscript {0}
         run: |
           renv::activate()
+          webdriver::install_phantomjs()
+          system("phantomjs --version")
           shiny::runTests(".", assert = TRUE)
       - name: Check test results
         shell: Rscript {0}
