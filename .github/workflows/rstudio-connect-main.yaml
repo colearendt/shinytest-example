@@ -12,6 +12,11 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
 
+      - name: Remove `.Rprofile`
+        shell: bash
+        run: |
+          rm .Rprofile
+
       - name: Publish the app
         uses: rstudio/actions/connect-publish@main
         with:

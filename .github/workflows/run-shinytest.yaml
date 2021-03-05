@@ -45,10 +45,10 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@master
 
       - name: Query dependencies
-        run: |
-          install.packages('remotes')
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
         shell: Rscript {0}
+        run: |
+          if (system.file(package = "renv") == "") install.packages("renv")
+          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
 
       - name: Cache R packages
         uses: actions/cache@v1
@@ -61,24 +61,24 @@ jobs:
         if: runner.os == 'Linux'
         shell: Rscript {0}
         run: |
-          # do not activate
-          remotes::install_cran("renv")
+          # do not record `pak` activity
+          renv::deactivate()
+          install.packages("jsonlite")
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
-          lapply(unique(renv::dependencies()$Package), function(pkg) {
-            pak::pkg_system_requirements(pkg, execute = TRUE)
+          pkgs <- names(jsonlite::read_json("manifest.json")$packages)
+          lapply(pkgs, function(pkg) {
+            try(pak::pkg_system_requirements(pkg, execute = TRUE))
           })
 
       - name: Install dependencies
         shell: Rscript {0}
         run: |
-          remotes::install_cran("renv")
-          source("renv/activate.R")
           renv::restore()
 
       - name: Find PhantomJS path
         id: phantomjs
         run: |
-          echo "::set-output name=path::$(Rscript -e 'renv::activate(); cat(shinytest:::phantom_paths()[[1]])')"
+          echo "::set-output name=path::$(Rscript -e 'cat(shinytest:::phantom_paths()[[1]])')"
       - name: Cache PhantomJS
         uses: actions/cache@v2
         with:
@@ -88,19 +88,16 @@ jobs:
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
-          renv::activate()
           if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
 
       - name: Run tests
         shell: Rscript {0}
         run: |
-          renv::activate()
           shiny::runTests(".", assert = TRUE)
 
       - name: Check test results
         shell: Rscript {0}
         run: |
-          renv::activate()
           results <- shinytest::textTestDiff()
           clean_results <- attr(results, "status")
           if (any(clean_results == "reject")) {
