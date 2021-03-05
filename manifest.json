@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "locale": "en_US",
-  "platform": "3.6.3",
+  "locale": "C",
+  "platform": "4.0.2",
   "metadata": {
     "appmode": "shiny",
     "primary_rmd": null,
@@ -12,7 +12,7 @@
   "packages": {
     "BH": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "BH",
         "Type": "Package",
@@ -27,14 +27,15 @@
         "BugReports": "https://github.com/eddelbuettel/bh/issues",
         "NeedsCompilation": "no",
         "Packaged": "2021-01-09 03:50:01 UTC; edd",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-11 22:50:06 UTC",
-        "Built": "R 3.6.2; ; 2021-01-12 06:17:04 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2021-02-11 21:40:40 UTC; unix"
       }
     },
     "MASS": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "MASS",
         "Priority": "recommended",
@@ -56,14 +57,15 @@
         "Packaged": "2019-12-20 08:20:12 UTC; ripley",
         "Author": "Brian Ripley [aut, cre, cph],\n  Bill Venables [ctb],\n  Douglas M. Bates [ctb],\n  Kurt Hornik [trl] (partial port ca 1998),\n  Albrecht Gebhardt [trl] (partial port ca 1998),\n  David Firth [ctb]",
         "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-12-20 09:21:25 UTC",
-        "Built": "R 3.6.3; x86_64-apple-darwin15.6.0; 2020-03-05 20:38:38 UTC; unix"
+        "Repository": "RSPM",
+        "Date/Publication": "2019-12-20 09:20:35 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:02:05 UTC; unix"
       }
     },
     "Matrix": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "Matrix",
         "Version": "1.2-18",
@@ -90,12 +92,12 @@
         "Author": "Douglas Bates [aut],\n  Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>),\n  Timothy A. Davis [ctb] (SuiteSparse and 'cs' C libraries, notably\n    CHOLMOD, AMD; collaborators listed in dir(pattern =\n    '^[A-Z]+[.]txt$', full.names=TRUE, system.file('doc',\n    'SuiteSparse', package='Matrix'))),\n  Jens Oehlschlägel [ctb] (initial nearPD()),\n  Jason Riedy [ctb] (condest() and onenormest() for octave, Copyright:\n    Regents of the University of California),\n  R Core Team [ctb] (base R matrix implementation)",
         "Repository": "CRAN",
         "Date/Publication": "2019-11-27 15:20:02 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-11-28 14:16:28 UTC; unix"
+        "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2021-02-17 03:32:03 UTC; unix"
       }
     },
     "R6": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "R6",
         "Title": "Encapsulated Classes with Reference Semantics",
@@ -113,14 +115,15 @@
         "Packaged": "2020-10-28 18:30:05 UTC; winston",
         "Author": "Winston Chang [aut, cre]",
         "Maintainer": "Winston Chang <winston@stdout.org>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-10-28 19:30:02 UTC",
-        "Built": "R 3.6.2; ; 2020-10-29 05:59:24 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2021-02-11 21:31:15 UTC; unix"
       }
     },
     "RColorBrewer": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "RColorBrewer",
         "Version": "1.1-2",
@@ -134,14 +137,15 @@
         "License": "Apache License 2.0",
         "Packaged": "2014-12-06 23:59:42 UTC; neuwirth",
         "NeedsCompilation": "no",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2014-12-07 08:28:55",
-        "Built": "R 3.6.0; ; 2019-04-26 19:50:52 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2021-02-11 21:45:41 UTC; unix"
       }
     },
     "Rcpp": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "Rcpp",
         "Title": "Seamless R and C++ Integration",
@@ -159,14 +163,15 @@
         "RoxygenNote": "6.1.1",
         "NeedsCompilation": "yes",
         "Packaged": "2020-07-01 16:50:09.72105 UTC; edd",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-07-06 13:40:08 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-07-07 04:26:06 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2020-12-30 19:13:57 UTC; unix"
       }
     },
     "askpass": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "askpass",
         "Type": "Package",
@@ -187,14 +192,14 @@
         "Packaged": "2019-01-13 12:08:17 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-01-13 12:50:03 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 22:26:39 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:40:31 UTC; unix"
       }
     },
     "assertthat": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "assertthat",
         "Title": "Easy Pre and Post Assertions",
@@ -210,14 +215,15 @@
         "Packaged": "2019-03-21 13:11:01 UTC; hadley",
         "Author": "Hadley Wickham [aut, cre]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-03-21 14:53:46 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 19:49:57 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2021-02-11 21:24:19 UTC; unix"
       }
     },
     "backports": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "backports",
         "Type": "Package",
@@ -237,14 +243,14 @@
         "RoxygenNote": "7.1.0",
         "Packaged": "2020-06-17 08:57:04 UTC; michel",
         "Author": "Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),\n  R Core Team [aut]",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-06-17 10:00:08 UTC",
-        "Built": "R 3.6.3; x86_64-apple-darwin15.6.0; 2020-06-17 11:11:52 UTC; unix"
+        "Built": "R 4.0.1; x86_64-pc-linux-gnu; 2020-06-18 10:24:36 UTC; unix"
       }
     },
     "base64enc": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "base64enc",
         "Version": "0.1-3",
@@ -258,14 +264,15 @@
         "URL": "http://www.rforge.net/base64enc",
         "NeedsCompilation": "yes",
         "Packaged": "2015-02-04 20:31:00 UTC; svnuser",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2015-07-28 08:03:37",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 19:50:57 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:38:57 UTC; unix"
       }
     },
     "brio": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "brio",
         "Title": "Basic R Input Output",
@@ -283,14 +290,14 @@
         "Packaged": "2020-08-28 18:14:14 UTC; jhester",
         "Author": "Jim Hester [aut, cre] (<https://orcid.org/0000-0002-2739-7082>),\n  RStudio [cph, fnd]",
         "Maintainer": "Jim Hester <jim.hester@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-08-31 07:20:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-09-01 04:26:20 UTC; unix"
+        "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-09-01 17:10:42 UTC; unix"
       }
     },
     "bslib": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "bslib",
         "Title": "Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'",
@@ -311,14 +318,14 @@
         "Packaged": "2021-01-20 15:08:19 UTC; cpsievert",
         "Author": "Carson Sievert [aut, cre],\n  Joe Cheng [aut],\n  RStudio [cph],\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Javi Aguilar [ctb, cph] (Bootstrap colorpicker library),\n  Thomas Park [ctb, cph] (Bootswatch library),\n  PayPal [ctb, cph] (Bootstrap accessibility plugin)",
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-25 08:00:02 UTC",
-        "Built": "R 3.6.2; ; 2021-01-26 13:29:57 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 22:21:02 UTC; unix"
       }
     },
     "cachem": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "cachem",
         "Version": "1.0.4",
@@ -337,14 +344,14 @@
         "Packaged": "2021-02-12 18:28:56 UTC; winston",
         "Author": "Winston Chang [aut, cre],\n  RStudio [cph, fnd]",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-02-13 07:30:05 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2021-02-14 12:37:20 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-15 10:45:00 UTC; unix"
       }
     },
     "callr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "callr",
         "Title": "Call R from R",
@@ -364,14 +371,14 @@
         "Packaged": "2020-10-13 12:15:24 UTC; gaborcsardi",
         "Author": "Gábor Csárdi [aut, cre, cph] (<https://orcid.org/0000-0001-7098-9676>),\n  Winston Chang [aut],\n  RStudio [cph, fnd],\n  Mango Solutions [cph, fnd]",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-10-13 13:10:02 UTC",
-        "Built": "R 3.6.2; ; 2020-10-14 06:03:47 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:45:47 UTC; unix"
       }
     },
     "cli": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "cli",
         "Title": "Helpers for Developing Command Line Interfaces",
@@ -391,14 +398,14 @@
         "Packaged": "2020-11-20 09:05:00 UTC; gaborcsardi",
         "Author": "Gábor Csárdi [aut, cre],\n  Hadley Wickham [ctb],\n  Kirill Müller [ctb]",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-11-20 10:00:05 UTC",
-        "Built": "R 3.6.2; ; 2020-11-21 06:56:04 UTC; unix"
+        "Built": "R 4.0.3; ; 2020-11-23 10:50:55 UTC; unix"
       }
     },
     "colorspace": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "colorspace",
         "Version": "1.4-1",
@@ -419,14 +426,15 @@
         "Packaged": "2019-03-18 09:11:41 UTC; zeileis",
         "Author": "Ross Ihaka [aut],\n  Paul Murrell [aut] (<https://orcid.org/0000-0002-3224-8858>),\n  Kurt Hornik [aut] (<https://orcid.org/0000-0003-4198-9911>),\n  Jason C. Fisher [aut] (<https://orcid.org/0000-0001-9032-8912>),\n  Reto Stauffer [aut] (<https://orcid.org/0000-0002-3798-5507>),\n  Claus O. Wilke [aut] (<https://orcid.org/0000-0002-7470-9261>),\n  Claire D. McWhite [aut] (<https://orcid.org/0000-0001-7346-3047>),\n  Achim Zeileis [aut, cre] (<https://orcid.org/0000-0003-0918-3766>)",
         "Maintainer": "Achim Zeileis <Achim.Zeileis@R-project.org>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-03-18 14:43:29 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 19:50:52 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:06:29 UTC; unix"
       }
     },
     "commonmark": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "commonmark",
         "Type": "Package",
@@ -443,14 +451,15 @@
         "Packaged": "2018-12-01 11:57:14 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre],\n  John MacFarlane [cph] (Author of cmark)",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-12-01 12:30:03 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 20:04:11 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:37:23 UTC; unix"
       }
     },
     "crayon": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "crayon",
         "Title": "Colored Terminal Output",
@@ -470,14 +479,14 @@
         "Packaged": "2017-09-15 18:14:04 UTC; gaborcsardi",
         "Author": "Gábor Csárdi [aut, cre],\n  Brodie Gaslam [ctb]",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2017-09-16 19:49:46 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 19:49:57 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-09 16:05:24 UTC; unix"
       }
     },
     "curl": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "curl",
         "Type": "Package",
@@ -500,14 +509,14 @@
         "Packaged": "2019-12-02 12:33:03 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-12-02 14:00:03 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-12-03 15:59:32 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:42:51 UTC; unix"
       }
     },
     "debugme": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "debugme",
         "Title": "Debug R Packages",
@@ -525,14 +534,14 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "no",
         "Packaged": "2017-10-22 09:14:23 UTC; gaborcsardi",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2017-10-22 14:18:09 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 20:14:18 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-10 01:35:30 UTC; unix"
       }
     },
     "desc": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "desc",
         "Title": "Manipulate DESCRIPTION Files",
@@ -553,14 +562,14 @@
         "NeedsCompilation": "no",
         "Packaged": "2018-05-01 20:22:08 UTC; gaborcsardi",
         "Author": "Gábor Csárdi [aut, cre],\n  Kirill Müller [aut],\n  Jim Hester [aut]",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-05-01 20:48:05 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 22:27:42 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:41:55 UTC; unix"
       }
     },
     "diffobj": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "diffobj",
         "Type": "Package",
@@ -583,14 +592,14 @@
         "Packaged": "2021-01-06 01:37:42 UTC; bg",
         "Author": "Brodie Gaslam [aut, cre],\n  Michael B. Allen [ctb, cph] (Original C implementation of Myers Diff\n    Algorithm)",
         "Maintainer": "Brodie Gaslam <brodie.gaslam@yahoo.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-07 07:00:48 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2021-01-08 07:07:45 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:21:50 UTC; unix"
       }
     },
     "digest": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "digest",
         "Author": "Dirk Eddelbuettel <edd@debian.org> with contributions \n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx, \n Michel Lang, Viliam Simko, Kurt Hornik, Radford Neal, Kendon Bell,\n Matthew de Queljoe, Ion Suruceanu, Bill Denney, Dirk Schumacher,\n and Winston Chang.",
@@ -608,14 +617,15 @@
         "VignetteBuilder": "knitr",
         "NeedsCompilation": "yes",
         "Packaged": "2020-10-20 13:03:32 UTC; edd",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-10-24 22:10:06 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-10-25 04:24:42 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:20:53 UTC; unix"
       }
     },
     "ellipsis": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "ellipsis",
         "Version": "0.3.1",
@@ -635,14 +645,14 @@
         "Packaged": "2020-05-15 05:57:33 UTC; lionel",
         "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-05-15 14:10:06 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-05-16 10:15:11 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:19:02 UTC; unix"
       }
     },
     "evaluate": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "evaluate",
         "Type": "Package",
@@ -662,14 +672,14 @@
         "Packaged": "2019-05-28 15:30:02 UTC; yihui",
         "Author": "Hadley Wickham [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Michael Lawrence [ctb],\n  Thomas Kluyver [ctb],\n  Jeroen Ooms [ctb],\n  Barret Schloerke [ctb],\n  Adam Ryczkowski [ctb],\n  Hiroaki Yutani [ctb],\n  Michel Lang [ctb],\n  Karolis Koncevičius [ctb]",
         "Maintainer": "Yihui Xie <xie@yihui.name>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-05-28 15:50:02 UTC",
-        "Built": "R 3.6.0; ; 2019-05-29 12:00:04 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:19:01 UTC; unix"
       }
     },
     "fansi": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fansi",
         "Title": "ANSI Control Sequence Aware String Functions",
@@ -690,14 +700,14 @@
         "Packaged": "2020-01-06 01:58:57 UTC; bg",
         "Author": "Brodie Gaslam [aut, cre],\n  Elliott Sales De Andrade [ctb],\n  R Core Team [cph] (UTF8 byte length calcs from src/util.c)",
         "Maintainer": "Brodie Gaslam <brodie.gaslam@yahoo.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-01-08 23:01:29 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2020-01-09 18:12:20 UTC; unix"
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:13:58 UTC; unix"
       }
     },
     "farver": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "farver",
         "Type": "Package",
@@ -716,14 +726,14 @@
         "NeedsCompilation": "yes",
         "Packaged": "2020-01-16 10:42:44 UTC; thomas",
         "Author": "Thomas Lin Pedersen [cre, aut]\n    (<https://orcid.org/0000-0002-5147-4711>),\n  Berendea Nicolae [aut] (Author of the ColorSpace C++ library),\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>)",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-01-16 13:40:07 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2020-01-17 18:41:07 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:35:30 UTC; unix"
       }
     },
     "fastmap": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fastmap",
         "Title": "Fast Implementation of a Key-Value Store",
@@ -741,14 +751,14 @@
         "Packaged": "2019-10-07 23:14:48 UTC; winston",
         "Author": "Winston Chang [aut, cre],\n  RStudio [cph, fnd],\n  Tessil [cph] (hopscotch_map library)",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-10-08 05:20:02 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-10-09 15:56:47 UTC; unix"
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:01:49 UTC; unix"
       }
     },
     "fs": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "fs",
         "Title": "Cross-Platform File System Operations Based on 'libuv'",
@@ -773,14 +783,14 @@
         "Packaged": "2020-07-31 21:00:55 UTC; jhester",
         "Author": "Jim Hester [aut, cre],\n  Hadley Wickham [aut],\n  libuv project contributors [cph] (libuv library),\n  Joyent, Inc. and other Node contributors [cph] (libuv library),\n  RStudio [cph, fnd]",
         "Maintainer": "Jim Hester <james.f.hester@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-07-31 21:30:03 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-08-01 06:59:29 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:18:06 UTC; unix"
       }
     },
     "ggplot2": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "ggplot2",
         "Version": "3.3.0",
@@ -803,14 +813,14 @@
         "Packaged": "2020-03-03 21:59:45 UTC; thomas",
         "Author": "Hadley Wickham [aut, cre],\n  Winston Chang [aut],\n  Lionel Henry [aut],\n  Thomas Lin Pedersen [aut],\n  Kohske Takahashi [aut],\n  Claus Wilke [aut],\n  Kara Woo [aut],\n  Hiroaki Yutani [aut],\n  Dewey Dunnington [aut],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-03-05 16:00:02 UTC",
-        "Built": "R 3.6.0; ; 2020-03-06 15:44:05 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-09 18:10:26 UTC; unix"
       }
     },
     "glue": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "glue",
         "Title": "Interpreted String Literals",
@@ -832,14 +842,14 @@
         "Packaged": "2020-08-26 17:24:06 UTC; jhester",
         "Author": "Jim Hester [aut, cre]",
         "Maintainer": "Jim Hester <james.f.hester@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-08-27 13:50:06 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-08-28 04:28:59 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:17:51 UTC; unix"
       }
     },
     "gtable": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "gtable",
         "Title": "Arrange 'Grobs' in Tables",
@@ -860,14 +870,14 @@
         "Packaged": "2019-03-25 14:56:43 UTC; thomas",
         "Author": "Hadley Wickham [aut, cre],\n  Thomas Lin Pedersen [aut],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-03-25 19:50:02 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 19:50:48 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:18:58 UTC; unix"
       }
     },
     "htmltools": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "htmltools",
         "Type": "Package",
@@ -889,14 +899,14 @@
         "Packaged": "2021-01-22 19:04:19 UTC; cpsievert",
         "Author": "Joe Cheng [aut],\n  Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  Winston Chang [aut],\n  Yihui Xie [aut],\n  Jeff Allen [aut],\n  RStudio [cph]",
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-22 22:40:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2021-01-23 05:25:48 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 22:05:07 UTC; unix"
       }
     },
     "htmlwidgets": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "htmlwidgets",
         "Type": "Package",
@@ -916,14 +926,15 @@
         "Packaged": "2019-10-07 21:55:31 UTC; jcheng",
         "Author": "Ramnath Vaidyanathan [aut, cph],\n  Yihui Xie [aut],\n  JJ Allaire [aut],\n  Joe Cheng [aut, cre],\n  Kenton Russell [aut, cph],\n  RStudio [cph]",
         "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-10-08 08:40:02 UTC",
-        "Built": "R 3.6.0; ; 2019-10-09 12:07:45 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; ; 2020-05-09 16:15:42 UTC; unix"
       }
     },
     "httpuv": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "httpuv",
         "Type": "Package",
@@ -946,14 +957,14 @@
         "Packaged": "2020-06-05 19:56:39 UTC; winston",
         "Author": "Joe Cheng [aut],\n  Winston Chang [aut, cre],\n  RStudio, PBC [cph],\n  Hector Corrada Bravo [ctb],\n  Jeroen Ooms [ctb]",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-06-06 05:00:06 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-06-07 04:28:37 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-01-12 11:48:09 UTC; unix"
       }
     },
     "httr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "httr",
         "Title": "Tools for Working with URLs and HTTP",
@@ -973,14 +984,14 @@
         "Packaged": "2020-07-20 14:19:08 UTC; hadley",
         "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-07-20 23:40:04 UTC",
-        "Built": "R 3.6.2; ; 2020-07-21 04:26:12 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:51:13 UTC; unix"
       }
     },
     "isoband": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "isoband",
         "Title": "Generate Isolines and Isobands from Regularly Spaced Elevation\nGrids",
@@ -1002,14 +1013,14 @@
         "Packaged": "2020-04-12 08:55:17 UTC; clauswilke",
         "Author": "Claus O. Wilke [aut, cre] (<https://orcid.org/0000-0002-7470-9261>)",
         "Maintainer": "Claus O. Wilke <wilke@austin.utexas.edu>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-04-12 09:40:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-04-13 10:14:54 UTC; unix"
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 17:37:57 UTC; unix"
       }
     },
     "jquerylib": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "jquerylib",
         "Title": "Obtain 'jQuery' as an HTML Dependency Object",
@@ -1026,14 +1037,14 @@
         "Packaged": "2020-12-17 16:05:25 UTC; cpsievert",
         "Author": "Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  Joe Cheng [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/lib/jquery-AUTHORS.txt)",
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-12-17 16:40:03 UTC",
-        "Built": "R 3.6.2; ; 2020-12-18 15:47:01 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 22:15:28 UTC; unix"
       }
     },
     "jsonlite": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "jsonlite",
         "Version": "1.7.2",
@@ -1052,14 +1063,14 @@
         "NeedsCompilation": "yes",
         "Packaged": "2020-12-09 13:54:18 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Duncan Temple Lang [ctb],\n  Lloyd Hilaiel [cph] (author of bundled libyajl)",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-12-09 17:40:03 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-12-10 07:20:27 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:33:28 UTC; unix"
       }
     },
     "labeling": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "labeling",
         "Type": "Package",
@@ -1072,19 +1083,20 @@
         "License": "MIT + file LICENSE | Unlimited",
         "LazyLoad": "no",
         "Collate": "'labeling.R'",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Repository/R-Forge/Project": "labeling",
         "Repository/R-Forge/Revision": "16",
         "Repository/R-Forge/DateTimeStamp": "2014-08-23 05:53:23",
         "Date/Publication": "2014-08-23 14:57:53",
         "Packaged": "2014-08-23 06:15:07 UTC; rforge",
         "NeedsCompilation": "no",
-        "Built": "R 3.6.0; ; 2019-04-26 19:50:48 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; ; 2020-05-09 16:30:34 UTC; unix"
       }
     },
     "later": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "later",
         "Type": "Package",
@@ -1104,14 +1116,15 @@
         "Packaged": "2020-06-02 13:23:01 UTC; winston",
         "Author": "Joe Cheng [aut, cre],\n  RStudio [cph],\n  Winston Chang [aut],\n  Marcus Geelnard [ctb, cph] (TinyCThread library,\n    https://tinycthread.github.io/),\n  Evan Nemerson [ctb, cph] (TinyCThread library,\n    https://tinycthread.github.io/)",
         "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-06-05 10:10:13 UTC",
-        "Built": "R 3.6.3; x86_64-apple-darwin15.6.0; 2020-06-05 17:36:57 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:44:15 UTC; unix"
       }
     },
     "lattice": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "lattice",
         "Version": "0.20-38",
@@ -1132,14 +1145,15 @@
         "BugReports": "https://github.com/deepayan/lattice/issues",
         "NeedsCompilation": "yes",
         "Packaged": "2018-11-04 11:39:05 UTC; deepayan",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-11-04 12:50:03 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 19:50:16 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 22:46:10 UTC; unix"
       }
     },
     "lifecycle": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "lifecycle",
         "Title": "Manage the Life Cycle of your Package Functions",
@@ -1160,14 +1174,14 @@
         "Packaged": "2020-03-06 15:50:11 UTC; lionel",
         "Author": "Lionel Henry [aut, cre],\n  RStudio [cph]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-03-06 16:20:02 UTC",
-        "Built": "R 3.6.0; ; 2020-03-07 21:03:05 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:19:30 UTC; unix"
       }
     },
     "magrittr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "magrittr",
@@ -1187,14 +1201,14 @@
         "Packaged": "2020-11-17 12:44:34 UTC; lionel",
         "Author": "Stefan Milton Bache [aut, cph] (Original author and creator of\n    magrittr),\n  Hadley Wickham [aut],\n  Lionel Henry [cre],\n  RStudio [cph, fnd]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-11-17 16:20:06 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-11-18 06:53:33 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:21:59 UTC; unix"
       }
     },
     "mgcv": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "mgcv",
         "Version": "1.8-31",
@@ -1213,12 +1227,12 @@
         "Packaged": "2019-11-08 21:21:15 UTC; sw283",
         "Repository": "CRAN",
         "Date/Publication": "2019-11-09 05:30:11 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-11-10 16:24:50 UTC; unix"
+        "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2021-02-17 03:35:16 UTC; unix"
       }
     },
     "mime": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "mime",
         "Type": "Package",
@@ -1237,14 +1251,14 @@
         "Packaged": "2020-02-04 17:11:45 UTC; yihui",
         "Author": "Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Jeffrey Horner [ctb],\n  Beilei Bian [ctb]",
         "Maintainer": "Yihui Xie <xie@yihui.name>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-02-04 18:20:06 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2020-02-05 20:05:16 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:19:45 UTC; unix"
       }
     },
     "munsell": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "munsell",
         "Type": "Package",
@@ -1260,14 +1274,15 @@
         "RoxygenNote": "6.0.1",
         "NeedsCompilation": "no",
         "Packaged": "2018-06-11 23:15:15 UTC; wickhamc",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-06-12 04:29:06 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 22:27:02 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2021-02-11 21:38:35 UTC; unix"
       }
     },
     "nlme": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "nlme",
         "Version": "3.1-144",
@@ -1289,14 +1304,14 @@
         "Packaged": "2020-02-02 15:05:16 UTC; hornik",
         "Author": "José Pinheiro [aut] (S version),\n  Douglas Bates [aut] (up to 2007),\n  Saikat DebRoy [ctb] (up to 2002),\n  Deepayan Sarkar [ctb] (up to 2005),\n  EISPACK authors [ctb] (src/rs.f),\n  Siem Heisterkamp [ctb] (Author fixed sigma),\n  Bert Van Willigen [ctb] (Programmer fixed sigma),\n  R-core [aut, cre]",
         "Maintainer": "R-core <R-core@R-project.org>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-02-06 09:50:06 UTC",
-        "Built": "R 3.6.3; x86_64-apple-darwin15.6.0; 2020-03-05 20:38:55 UTC; unix"
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-10 00:26:10 UTC; unix"
       }
     },
     "openssl": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "openssl",
         "Type": "Package",
@@ -1317,14 +1332,14 @@
         "Packaged": "2020-09-18 10:34:40 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Oliver Keyes [ctb]",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-09-18 12:00:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-09-22 09:30:54 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:46:16 UTC; unix"
       }
     },
     "parsedate": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "parsedate",
         "Title": "Recognize and Parse Dates in Various Formats, Including All ISO\n8601 Formats",
@@ -1342,14 +1357,14 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
         "Packaged": "2019-05-08 13:19:59 UTC; gaborcsardi",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-05-08 14:00:03 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-05-09 15:11:31 UTC; unix"
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 17:15:28 UTC; unix"
       }
     },
     "pillar": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "pillar",
         "Title": "Coloured Formatting for Columns",
@@ -1368,14 +1383,14 @@
         "Packaged": "2020-11-20 06:09:25 UTC; kirill",
         "Author": "Kirill Müller [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph]",
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-11-20 06:50:02 UTC",
-        "Built": "R 3.6.2; ; 2020-11-21 05:25:26 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:44:39 UTC; unix"
       }
     },
     "pingr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "pingr",
         "Title": "Check if a Remote Computer is Up",
@@ -1394,14 +1409,14 @@
         "Packaged": "2020-06-22 14:44:39 UTC; csard",
         "Author": "Gábor Csárdi [aut, cre]",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-06-22 17:40:03 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-06-23 05:41:46 UTC; unix"
+        "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-06-25 14:12:34 UTC; unix"
       }
     },
     "pkgbuild": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "pkgbuild",
         "Title": "Find Tools Needed to Build R Packages",
@@ -1421,14 +1436,14 @@
         "Packaged": "2020-05-06 19:57:03 UTC; jhester",
         "Author": "Hadley Wickham [aut],\n  Jim Hester [aut, cre],\n  RStudio [cph]",
         "Maintainer": "Jim Hester <jim.hester@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-05-07 08:40:13 UTC",
-        "Built": "R 3.6.2; ; 2020-05-08 04:31:03 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-13 19:53:53 UTC; unix"
       }
     },
     "pkgconfig": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "pkgconfig",
         "Title": "Private Configuration for 'R' Packages",
@@ -1445,14 +1460,14 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "no",
         "Packaged": "2019-09-22 08:42:40 UTC; gaborcsardi",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-09-22 09:20:02 UTC",
-        "Built": "R 3.6.0; ; 2019-09-23 16:47:11 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:47:28 UTC; unix"
       }
     },
     "pkgload": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "pkgload",
         "Title": "Simulate Package Installation and Attach",
@@ -1471,14 +1486,14 @@
         "Packaged": "2020-05-28 17:51:35 UTC; jhester",
         "Author": "Hadley Wickham [aut],\n  Jim Hester [aut, cre],\n  Winston Chang [aut],\n  RStudio [cph],\n  R Core team [ctb] (Some namespace and vignette code extracted from base\n    R)",
         "Maintainer": "Jim Hester <jim.hester@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-05-29 05:10:08 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-05-30 04:32:03 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:59:45 UTC; unix"
       }
     },
     "png": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "png",
         "Version": "0.1-7",
@@ -1492,14 +1507,15 @@
         "URL": "http://www.rforge.net/png/",
         "Packaged": "2013-12-03 20:09:14 UTC; svnuser",
         "NeedsCompilation": "yes",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2013-12-03 22:25:05",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 19:51:32 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:19:53 UTC; unix"
       }
     },
     "praise": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "praise",
         "Title": "Praise Users",
@@ -1515,14 +1531,15 @@
         "Collate": "'adjective.R' 'adverb.R' 'exclamation.R' 'verb.R' 'rpackage.R'\n'package.R'",
         "NeedsCompilation": "no",
         "Packaged": "2015-08-11 02:01:43 UTC; gaborcsardi",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2015-08-11 08:22:28",
-        "Built": "R 3.6.0; ; 2019-04-26 19:55:56 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2021-02-11 21:35:10 UTC; unix"
       }
     },
     "prettyunits": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "prettyunits",
         "Title": "Pretty, Human Readable Formatting of Quantities",
@@ -1539,14 +1556,14 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "no",
         "Packaged": "2020-01-24 02:16:46 UTC; gaborcsardi",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-01-24 06:50:07 UTC",
-        "Built": "R 3.6.0; ; 2020-01-27 17:40:56 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:16:31 UTC; unix"
       }
     },
     "processx": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "processx",
         "Title": "Execute and Control System Processes",
@@ -1565,14 +1582,14 @@
         "Packaged": "2020-11-30 11:08:13 UTC; gaborcsardi",
         "Author": "Gábor Csárdi [aut, cre, cph] (<https://orcid.org/0000-0001-7098-9676>),\n  Winston Chang [aut],\n  RStudio [cph, fnd],\n  Mango Solutions [cph, fnd]",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-11-30 11:40:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-12-01 07:00:09 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:36:32 UTC; unix"
       }
     },
     "promises": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "promises",
         "Type": "Package",
@@ -1594,14 +1611,14 @@
         "Packaged": "2020-06-09 21:23:18 UTC; winston",
         "Author": "Joe Cheng [aut, cre],\n  RStudio [cph, fnd]",
         "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-06-09 21:50:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-06-10 10:38:02 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:47:53 UTC; unix"
       }
     },
     "ps": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "ps",
         "Version": "1.5.0",
@@ -1621,14 +1638,14 @@
         "Packaged": "2020-12-05 10:22:34 UTC; gaborcsardi",
         "Author": "Jay Loden [aut],\n  Dave Daeschler [aut],\n  Giampaolo Rodola' [aut],\n  Gábor Csárdi [aut, cre],\n  RStudio [cph]",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-12-05 16:40:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-12-06 06:57:33 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:23:30 UTC; unix"
       }
     },
     "rappdirs": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rappdirs",
         "Type": "Package",
@@ -1647,14 +1664,15 @@
         "Packaged": "2016-03-28 19:04:15 UTC; hadley",
         "Author": "Hadley Wickham [trl, cre, cph],\n  RStudio [cph],\n  Sridhar Ratnakumar [aut],\n  Trent Mick [aut],\n  ActiveState [cph] (R/appdir.r, R/cache.r, R/data.r, R/log.r translated\n    from appdirs),\n  Eddy Petrisor [ctb],\n  Trevor Davis [trl, aut],\n  Gabor Csardi [ctb],\n  Gregory Jefferis [ctb]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2016-03-28 23:10:10",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 19:56:22 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:15:34 UTC; unix"
       }
     },
     "rematch": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rematch",
         "Title": "Match Regular Expressions with a Nicer 'API'",
@@ -1671,14 +1689,14 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "no",
         "Packaged": "2016-04-20 19:54:37 UTC; gaborcsardi",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2016-04-21 08:20:46",
-        "Built": "R 3.6.0; ; 2019-04-26 19:57:25 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:29:17 UTC; unix"
       }
     },
     "rematch2": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rematch2",
         "Title": "Tidy Output from Regular Expression Matching",
@@ -1697,14 +1715,14 @@
         "Packaged": "2020-04-30 10:31:13 UTC; gaborcsardi",
         "Author": "Gábor Csárdi [aut, cre],\n  Matthew Lincoln [ctb]",
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-05-01 06:50:02 UTC",
-        "Built": "R 3.6.2; ; 2020-05-02 11:13:08 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 22:03:33 UTC; unix"
       }
     },
     "rlang": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rlang",
         "Version": "0.4.10",
@@ -1728,14 +1746,14 @@
         "Packaged": "2020-12-18 09:35:30 UTC; lionel",
         "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  mikefc [cph] (Hash implementation based on Mike's xxhashlite),\n  Yann Collet [cph] (Author of the embedded xxHash library),\n  RStudio [cph]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-12-30 15:00:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-12-31 05:26:20 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:16:54 UTC; unix"
       }
     },
     "rprojroot": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rprojroot",
         "Title": "Finding Files in Project Subdirectories",
@@ -1757,14 +1775,14 @@
         "Packaged": "2018-01-03 13:27:15 UTC; muelleki",
         "Author": "Kirill Müller [aut, cre]",
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-01-03 15:36:24 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 19:51:42 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-09 16:33:31 UTC; unix"
       }
     },
     "rstudioapi": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "rstudioapi",
         "Title": "Safely Access the RStudio API",
@@ -1782,14 +1800,14 @@
         "NeedsCompilation": "no",
         "Packaged": "2020-02-07 18:58:10 UTC; kevinushey",
         "Author": "Kevin Ushey [aut, cre],\n  JJ Allaire [aut],\n  Hadley Wickham [aut],\n  Gary Ritchie [aut],\n  RStudio [cph]",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-02-07 23:20:02 UTC",
-        "Built": "R 3.6.0; ; 2020-02-08 15:52:00 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-09 16:22:00 UTC; unix"
       }
     },
     "sass": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Type": "Package",
         "Package": "sass",
@@ -1811,14 +1829,14 @@
         "Packaged": "2021-01-22 19:21:04 UTC; cpsievert",
         "Author": "Joe Cheng [aut],\n  Timothy Mastny [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),\n  Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  RStudio [cph, fnd],\n  Sass Open Source Foundation [ctb, cph] (LibSass library),\n  Greter Marcel [ctb, cph] (LibSass library),\n  Mifsud Michael [ctb, cph] (LibSass library),\n  Hampton Catlin [ctb, cph] (LibSass library),\n  Natalie Weizenbaum [ctb, cph] (LibSass library),\n  Chris Eppstein [ctb, cph] (LibSass library),\n  Adams Joseph [ctb, cph] (json.cpp),\n  Trifunovic Nemanja [ctb, cph] (utf8.h)",
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-24 17:10:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2021-01-25 07:08:56 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 22:15:32 UTC; unix"
       }
     },
     "scales": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "scales",
         "Title": "Scale Functions for Visualization",
@@ -1838,14 +1856,14 @@
         "Packaged": "2019-11-18 14:21:37 UTC; hadley",
         "Author": "Hadley Wickham [aut, cre],\n  Dana Seidel [aut],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-11-18 16:10:05 UTC",
-        "Built": "R 3.6.0; ; 2019-11-19 15:12:57 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-09 17:02:34 UTC; unix"
       }
     },
     "shiny": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "shiny",
         "Type": "Package",
@@ -1867,14 +1885,14 @@
         "Packaged": "2021-01-25 16:18:51 UTC; winston",
         "Author": "Winston Chang [aut, cre],\n  Joe Cheng [aut],\n  JJ Allaire [aut],\n  Carson Sievert [aut],\n  Barret Schloerke [aut],\n  Yihui Xie [aut],\n  Jeff Allen [aut],\n  Jonathan McPherson [aut],\n  Alan Dipert [aut],\n  Barbara Borges [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/www/shared/jqueryui/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Prem Nawaz Khan [ctb] (Bootstrap accessibility plugin),\n  Victor Tsaran [ctb] (Bootstrap accessibility plugin),\n  Dennis Lembree [ctb] (Bootstrap accessibility plugin),\n  Srinivasu Chakravarthula [ctb] (Bootstrap accessibility plugin),\n  Cathy O'Connor [ctb] (Bootstrap accessibility plugin),\n  PayPal, Inc [cph] (Bootstrap accessibility plugin),\n  Stefan Petre [ctb, cph] (Bootstrap-datepicker library),\n  Andrew Rowls [ctb, cph] (Bootstrap-datepicker library),\n  Dave Gandy [ctb, cph] (Font-Awesome font),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Salmen Bejaoui [ctb, cph] (selectize-plugin-a11y library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library),\n  SpryMedia Limited [ctb, cph] (DataTables library),\n  John Fraser [ctb, cph] (showdown.js library),\n  John Gruber [ctb, cph] (showdown.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  R Core Team [ctb, cph] (tar implementation from R)",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-25 21:50:02 UTC",
-        "Built": "R 3.6.2; ; 2021-01-27 07:07:47 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 22:43:41 UTC; unix"
       }
     },
     "shinytest": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "shinytest",
         "Title": "Test Shiny Apps",
@@ -1894,14 +1912,14 @@
         "Packaged": "2021-01-13 00:14:49 UTC; winston",
         "Author": "Winston Chang [aut, cre],\n  Gábor Csárdi [aut],\n  Hadley Wickham [aut],\n  RStudio [cph, fnd],\n  Mango Solutions [cph, ccp]",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-13 06:40:02 UTC",
-        "Built": "R 3.6.2; ; 2021-01-14 07:25:12 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-01-14 10:53:33 UTC; unix"
       }
     },
     "showimage": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "showimage",
         "Title": "Show an Image on an 'R' Graphics Device",
@@ -1919,14 +1937,14 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "no",
         "Packaged": "2018-01-23 10:39:23 UTC; gaborcsardi",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-01-24 09:51:26 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 20:14:21 UTC; unix"
+        "Built": "R 4.0.0; ; 2020-05-10 06:09:57 UTC; unix"
       }
     },
     "sourcetools": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "sourcetools",
         "Type": "Package",
@@ -1944,14 +1962,14 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
         "Packaged": "2018-04-25 03:19:22 UTC; kevin",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-04-25 03:38:09 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 19:50:45 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:15:59 UTC; unix"
       }
     },
     "stringi": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "stringi",
         "Version": "1.4.6",
@@ -1972,14 +1990,15 @@
         "NeedsCompilation": "yes",
         "Packaged": "2020-02-17 01:46:10 UTC; gagolews",
         "License_is_FOSS": "yes",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-02-17 18:00:06 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2020-02-18 17:48:17 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-05-09 16:31:29 UTC; unix"
       }
     },
     "stringr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "stringr",
         "Title": "Simple, Consistent Wrappers for Common String Operations",
@@ -2000,14 +2019,14 @@
         "Packaged": "2019-02-09 16:03:19 UTC; hadley",
         "Author": "Hadley Wickham [aut, cre, cph],\n  RStudio [cph, fnd]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2019-02-10 03:40:03 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 22:26:53 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:40:21 UTC; unix"
       }
     },
     "sys": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "sys",
         "Type": "Package",
@@ -2027,14 +2046,14 @@
         "Packaged": "2020-07-22 19:23:54 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Gábor Csárdi [ctb]",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-07-23 04:30:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-07-24 05:00:01 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:21:27 UTC; unix"
       }
     },
     "testthat": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "testthat",
         "Title": "Unit Testing for R",
@@ -2057,14 +2076,14 @@
         "Packaged": "2020-12-15 17:55:51 UTC; hadley",
         "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph, fnd],\n  R Core team [ctb] (Implementation of utils::recover())",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-12-17 10:00:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-12-18 07:21:34 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 22:23:43 UTC; unix"
       }
     },
     "tibble": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "tibble",
         "Title": "Simple Data Frames",
@@ -2085,14 +2104,14 @@
         "Packaged": "2020-10-11 18:10:52 UTC; kirill",
         "Author": "Kirill Müller [aut, cre],\n  Hadley Wickham [aut],\n  Romain Francois [ctb],\n  Jennifer Bryan [ctb],\n  RStudio [cph]",
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-10-12 11:20:03 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-10-13 06:31:03 UTC; unix"
+        "Built": "R 4.0.2; x86_64-pc-linux-gnu; 2020-10-13 21:24:22 UTC; unix"
       }
     },
     "utf8": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "utf8",
         "Version": "1.1.4",
@@ -2111,14 +2130,14 @@
         "Packaged": "2018-05-24 15:00:57 UTC; ptrck",
         "Author": "Patrick O. Perry [aut, cph, cre],\n  Unicode, Inc. [cph, dtc] (Unicode Character Database)",
         "Maintainer": "Patrick O. Perry <patperry@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-05-24 17:09:15 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2019-04-26 19:50:07 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:36:01 UTC; unix"
       }
     },
     "vctrs": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "vctrs",
         "Title": "Vector Helpers",
@@ -2140,14 +2159,14 @@
         "Packaged": "2020-12-17 09:22:46 UTC; lionel",
         "Author": "Hadley Wickham [aut],\n  Lionel Henry [aut, cre],\n  Davis Vaughan [aut],\n  data.table team [cph] (Radix sort based on data.table's forder() and\n    their contribution to R's order()),\n  RStudio [cph]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-12-17 10:30:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin15.6.0; 2020-12-18 07:18:05 UTC; unix"
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:25:15 UTC; unix"
       }
     },
     "viridisLite": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "viridisLite",
         "Type": "Package",
@@ -2167,14 +2186,14 @@
         "NeedsCompilation": "no",
         "Packaged": "2018-02-01 17:33:56 UTC; simon",
         "Author": "Simon Garnier [aut, cre],\n  Noam Ross [ctb, cph],\n  Bob Rudis [ctb, cph],\n  Marco Sciaini [ctb, cph],\n  Cédric Scherer [ctb, cph]",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2018-02-01 22:45:56 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 19:50:56 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 21:31:36 UTC; unix"
       }
     },
     "waldo": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "waldo",
         "Title": "Find Differences Between R Objects",
@@ -2194,14 +2213,14 @@
         "Packaged": "2020-11-09 14:55:30 UTC; hadley",
         "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-11-09 16:30:02 UTC",
-        "Built": "R 3.6.2; ; 2020-11-10 06:49:07 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-02-11 22:09:50 UTC; unix"
       }
     },
     "webdriver": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "webdriver",
         "Title": "'WebDriver' Client for 'PhantomJS'",
@@ -2220,14 +2239,14 @@
         "SystemRequirements": "PhantomJS (http://phantomjs.org/)",
         "NeedsCompilation": "no",
         "Packaged": "2021-01-12 18:40:09 UTC; winston",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-12 19:40:02 UTC",
-        "Built": "R 3.6.2; ; 2021-01-13 19:49:38 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-01-13 18:03:12 UTC; unix"
       }
     },
     "withr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "withr",
         "Title": "Run Code 'With' Temporarily Modified Global State",
@@ -2249,14 +2268,14 @@
         "Packaged": "2021-01-15 16:34:41 UTC; jhester",
         "Author": "Jim Hester [aut, cre],\n  Kirill Müller [aut],\n  Kevin Ushey [aut],\n  Hadley Wickham [aut],\n  Winston Chang [aut],\n  Jennifer Bryan [ctb],\n  Richard Cotton [ctb],\n  RStudio [cph]",
         "Maintainer": "Jim Hester <james.f.hester@gmail.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-01-16 02:10:02 UTC",
-        "Built": "R 3.6.2; ; 2021-01-16 05:26:01 UTC; unix"
+        "Built": "R 4.0.3; ; 2021-01-19 04:08:07 UTC; unix"
       }
     },
     "xtable": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "xtable",
         "Version": "1.8-4",
@@ -2271,17 +2290,18 @@
         "URL": "http://xtable.r-forge.r-project.org/",
         "Depends": "R (>= 2.10.0)",
         "License": "GPL (>= 2)",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "NeedsCompilation": "no",
         "Packaged": "2019-04-21 10:56:51 UTC; dsco036",
         "Author": "David B. Dahl [aut],\n  David Scott [aut, cre],\n  Charles Roosen [aut],\n  Arni Magnusson [aut],\n  Jonathan Swinton [aut],\n  Ajay Shah [ctb],\n  Arne Henningsen [ctb],\n  Benno Puetz [ctb],\n  Bernhard Pfaff [ctb],\n  Claudio Agostinelli [ctb],\n  Claudius Loehnert [ctb],\n  David Mitchell [ctb],\n  David Whiting [ctb],\n  Fernando da Rosa [ctb],\n  Guido Gay [ctb],\n  Guido Schulz [ctb],\n  Ian Fellows [ctb],\n  Jeff Laake [ctb],\n  John Walker [ctb],\n  Jun Yan [ctb],\n  Liviu Andronic [ctb],\n  Markus Loecher [ctb],\n  Martin Gubri [ctb],\n  Matthieu Stigler [ctb],\n  Robert Castelo [ctb],\n  Seth Falcon [ctb],\n  Stefan Edwards [ctb],\n  Sven Garbade [ctb],\n  Uwe Ligges [ctb]",
         "Date/Publication": "2019-04-21 12:20:03 UTC",
-        "Built": "R 3.6.0; ; 2019-04-26 19:49:57 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; ; 2021-02-11 21:38:34 UTC; unix"
       }
     },
     "yaml": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest",
       "description": {
         "Package": "yaml",
         "Type": "Package",
@@ -2297,276 +2317,292 @@
         "BugReports": "https://github.com/viking/r-yaml/issues",
         "NeedsCompilation": "yes",
         "Packaged": "2020-01-30 20:29:56 UTC; stephej1",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2020-02-01 05:50:02 UTC",
-        "Built": "R 3.6.0; x86_64-apple-darwin15.6.0; 2020-02-02 13:10:02 UTC; unix"
+        "Encoding": "UTF-8",
+        "Built": "R 4.0.3; x86_64-pc-linux-gnu; 2021-02-11 21:18:29 UTC; unix"
       }
     }
   },
   "files": {
+    ".github/workflows/rstudio-connect-main.yaml": {
+      "checksum": "1e234bb2434fb9b7717f707d7b2e4aae"
+    },
+    ".github/workflows/rstudio-connect-pr.yaml": {
+      "checksum": "25ca00d37b6cf7475f4c2c299d94d371"
+    },
+    ".github/workflows/run-shinytest.yaml": {
+      "checksum": "9f7da58086b238fff82b5649c1251493"
+    },
+    ".github/workflows/sync-manifest.yaml": {
+      "checksum": "e3d40f2153970e7da92cb3ab9a159d2e"
+    },
+    ".Rprofile": {
+      "checksum": "57f9047cb06fdbef821b61f49e21406e"
+    },
     "packrat/desc/askpass": {
-      "checksum": "94189e2591613758acecb70968843b7e"
+      "checksum": "a2b71352f87065d4593e4f6431271c3e"
     },
     "packrat/desc/assertthat": {
-      "checksum": "5546908c8abf7dc750e9b59d246d8082"
+      "checksum": "eb848bdce6b547cef462c73fe6427d89"
     },
     "packrat/desc/backports": {
-      "checksum": "e9fae5c7e549c292af19764b423289aa"
+      "checksum": "df024b3e9437d6a04955984f1a7efeae"
     },
     "packrat/desc/base64enc": {
-      "checksum": "4968159e8f1ce5fdd79257f19560b1bd"
+      "checksum": "cd6d83ce7c47a9cdfb51cc1c9478e220"
     },
     "packrat/desc/BH": {
-      "checksum": "dae60fbbe663bcbac1bdf08aa18d87a8"
+      "checksum": "57fe5af5eb8d9d8efa1afd6eabb68ab8"
     },
     "packrat/desc/brio": {
-      "checksum": "9224ab81cb13fca4a8fe3dd056029f72"
+      "checksum": "d6af665393c38683ee9ec667ec1c31e6"
     },
     "packrat/desc/bslib": {
-      "checksum": "1812d4532d3f08746eddbad82d4f8a33"
+      "checksum": "2a5806c9c8afb5f097d9d91eaf1a0016"
     },
     "packrat/desc/cachem": {
-      "checksum": "64d28f7eb67380aa693cf4dfc3ba6cbc"
+      "checksum": "81de919aeefc78c3b4001817a640e241"
     },
     "packrat/desc/callr": {
-      "checksum": "8528a9b4ee9f9ec16c1209d2619ee1c5"
+      "checksum": "cbd84973b6ba3b86e83432a867d1bba4"
     },
     "packrat/desc/cli": {
-      "checksum": "4d6a8f48dd9b98e09293fcb0fd8045bc"
+      "checksum": "9a4230bc0cf49ff9bb97a6823159e0b6"
     },
     "packrat/desc/colorspace": {
-      "checksum": "3bcd3437f7f1d5021b353faeb845d165"
+      "checksum": "d444a225d91252520cc9698b7aecd737"
     },
     "packrat/desc/commonmark": {
-      "checksum": "9185e6d30f52f4a45e76fe40c9eddd0d"
+      "checksum": "39d6d9fca35c43cc990df76a57bff6a7"
     },
     "packrat/desc/crayon": {
-      "checksum": "b24ecaa8a9670c0265dba74ec47767ba"
+      "checksum": "c468bd87210e2d940fc9f56fb1f9869c"
     },
     "packrat/desc/curl": {
-      "checksum": "45cb602c8e08497c7908de15290ce741"
+      "checksum": "2af938afe4e1031d9a4a4a2ee400c813"
     },
     "packrat/desc/debugme": {
-      "checksum": "4ffb44bb8e0c2c8f2b7a467aa8330ab4"
+      "checksum": "f267a6be56fd1e87714f92fb63f72afa"
     },
     "packrat/desc/desc": {
-      "checksum": "fdb6f8d87dd61af33249b52e639c394e"
+      "checksum": "de2865aedf627aaec5297422b7a6faa8"
     },
     "packrat/desc/diffobj": {
-      "checksum": "e1634d9aad50692166182f34312b1dd6"
+      "checksum": "d7e638a45c3a232a91dbec2a853348ba"
     },
     "packrat/desc/digest": {
-      "checksum": "f7f763bc92fe659dbc69313b42c72774"
+      "checksum": "5a35ef076edb8804c0b77cb00135612a"
     },
     "packrat/desc/ellipsis": {
-      "checksum": "e1fb1a742563239e92713e59a1a22602"
+      "checksum": "527e09cf2078ed1b237df375a21567c0"
     },
     "packrat/desc/evaluate": {
-      "checksum": "5111c5025419f9e6ba69fb042e6a4446"
+      "checksum": "603b95c9273aec1e60af7eced159121f"
     },
     "packrat/desc/fansi": {
-      "checksum": "bb00057b2449611a21048c34b5961248"
+      "checksum": "6c8b2e543c929b2329f16f7a373c0443"
     },
     "packrat/desc/farver": {
-      "checksum": "cdebfcb712ba31058999c9ee661663aa"
+      "checksum": "7a302b7f6417e899e4add50be500654d"
     },
     "packrat/desc/fastmap": {
-      "checksum": "50e0a99538161dad94d2a0b9130e8a0e"
+      "checksum": "568332ad10413553eb55dae3ee761f45"
     },
     "packrat/desc/fs": {
-      "checksum": "7db89f336eec946d2ef0c9797abb6e75"
+      "checksum": "791f530c470e8437aed1e94ace1b8ade"
     },
     "packrat/desc/ggplot2": {
-      "checksum": "4784bd1e415f84013d06c5ccd02733f9"
+      "checksum": "48d077b4249c83fc2021565274b4a72f"
     },
     "packrat/desc/glue": {
-      "checksum": "f7a55c8892e443bac9871cd0cc16da58"
+      "checksum": "a8880f404d0d150c1413919b204f7910"
     },
     "packrat/desc/gtable": {
-      "checksum": "500a690fcdf70a6711e8a5a298f85e4e"
+      "checksum": "13a14da1fa66d858e26b0ed5ac8f7690"
     },
     "packrat/desc/htmltools": {
-      "checksum": "07ff2ba035c7385b9b078d6f1ac3ccaf"
+      "checksum": "5e97a9558def341924c3f8e87d2c38bc"
     },
     "packrat/desc/htmlwidgets": {
-      "checksum": "fad202a8e091a72cd94c41928296f51a"
+      "checksum": "4bb91d683d6a6e8c7935a5bc17ababdf"
     },
     "packrat/desc/httpuv": {
-      "checksum": "262d7f0c6931d2236811180ac6a2e28d"
+      "checksum": "c362979a1655207568e5acfeff383209"
     },
     "packrat/desc/httr": {
-      "checksum": "dc34346f449f1f9671f8fc8cd276c76e"
+      "checksum": "948e851148c587b6a7c7c25f76628e08"
     },
     "packrat/desc/isoband": {
-      "checksum": "1939a38013059a5bad0d81fcdc90a661"
+      "checksum": "46e8d27d7ef1c3a9336927ea83495e53"
     },
     "packrat/desc/jquerylib": {
-      "checksum": "6601266353188807be39be5e1ba371d5"
+      "checksum": "be8b69d216b503eef23e5e4fdc006154"
     },
     "packrat/desc/jsonlite": {
-      "checksum": "3cdedd47d3f1407b317bd57ec73a1f56"
+      "checksum": "89f5d9fa0c97e0b3d943994c7aace45f"
     },
     "packrat/desc/labeling": {
-      "checksum": "c380e60f2819fb5f40e18e442b3064bb"
+      "checksum": "64952fda757e0fcad8e9aba8c510cda4"
     },
     "packrat/desc/later": {
-      "checksum": "780ba29cdc272726e6faeb383f0c3ffb"
+      "checksum": "668656e87afab6ff88f8325fa6e13b21"
     },
     "packrat/desc/lattice": {
-      "checksum": "b615dce3cb33267723a5e77aee329628"
+      "checksum": "163d782d916cbb6f8f02988e78ae82e4"
     },
     "packrat/desc/lifecycle": {
-      "checksum": "8e519fe3176c925dc152b1595a5ab181"
+      "checksum": "1e662bac2cf38883818073076a55df85"
     },
     "packrat/desc/magrittr": {
-      "checksum": "452562d0b749f951e7c17ad795fb2190"
+      "checksum": "bbdec8ae0a2ab8c191ec5262010dbda0"
     },
     "packrat/desc/MASS": {
-      "checksum": "8b12fbb61c1231a52c4af0e35605a235"
+      "checksum": "cdfb2c204d06ce169d1ac340498561b8"
     },
     "packrat/desc/Matrix": {
-      "checksum": "4e78e8a09b90077ac6e79c9cd02b01c3"
+      "checksum": "cacb93efd8584792fa820349c5d468d8"
     },
     "packrat/desc/mgcv": {
-      "checksum": "d96e857c9b80d63a7eb132f5752c9e2f"
+      "checksum": "545ded079bbd423e47bdf5b3581c4268"
     },
     "packrat/desc/mime": {
-      "checksum": "fa29cb5a42d6ee931779ae149d514c0f"
+      "checksum": "62482eb1c6a71c35bb55083d92253f5c"
     },
     "packrat/desc/munsell": {
-      "checksum": "dd3e5dab6a3aaf7d00317e87591c3166"
+      "checksum": "07e5e8b5c438dd01b4482c13a4af8e4d"
     },
     "packrat/desc/nlme": {
-      "checksum": "7e5095472be0bd4da97c1f1943fea491"
+      "checksum": "421de994f30a638ee43438e230910811"
     },
     "packrat/desc/openssl": {
-      "checksum": "b1d8d6720dd89fd643778a303504fe7c"
+      "checksum": "e82777326b275e620c50ed06769d63fa"
     },
     "packrat/desc/parsedate": {
-      "checksum": "bde981a8063edd8908c0ea8f524a2b8c"
+      "checksum": "e5ed987bfcf1a1ca4dd91289af0b88f3"
     },
     "packrat/desc/pillar": {
-      "checksum": "663c29f0af5cddab4333d397e0c0ecb7"
+      "checksum": "dcd7a67ca347f3664c3f7243f5142f49"
     },
     "packrat/desc/pingr": {
-      "checksum": "7052b97bfdba7c7f470bca25ab3f7254"
+      "checksum": "921f6ac6fdb14a3c336bca454eb1a8cf"
     },
     "packrat/desc/pkgbuild": {
-      "checksum": "2ef6c6825e6bf5cfd17c00c555257d4c"
+      "checksum": "8b55488e1a23bd708798623e2f153c74"
     },
     "packrat/desc/pkgconfig": {
-      "checksum": "bfe35146671bfb17669c2a8da6ebeb3a"
+      "checksum": "39e43dff1c158ae3f7228be74d562010"
     },
     "packrat/desc/pkgload": {
-      "checksum": "2d3abb0665f1cb83d7b58af90418e2e3"
+      "checksum": "6f2851b7c9a23b25212d467a2250e155"
     },
     "packrat/desc/png": {
-      "checksum": "075e4abd2c0fabf75602d3c2dea78b42"
+      "checksum": "8b7591b9da878319656bcd2eff427c04"
     },
     "packrat/desc/praise": {
-      "checksum": "66a95e3166a9cabe33e0505b5fa03d40"
+      "checksum": "77b0b7883a936f437a748cc030fbfe36"
     },
     "packrat/desc/prettyunits": {
-      "checksum": "226e63a3a3b7866133289f1c88c660a5"
+      "checksum": "224bba7c7012ef388f5adbea20e44d1b"
     },
     "packrat/desc/processx": {
-      "checksum": "ab2ea97af4a02e784b2d1336e8d55748"
+      "checksum": "c85cfa9f20417a647d5f47be89e15af1"
     },
     "packrat/desc/promises": {
-      "checksum": "c7e462b2e6c40d48d7cd94eae3543331"
+      "checksum": "f7b68ece6187e301e8faf1d7484876a6"
     },
     "packrat/desc/ps": {
-      "checksum": "e40208003941077e49fef8ad2d739a61"
+      "checksum": "7dd188f8f36977cd64fa44430a1da257"
     },
     "packrat/desc/R6": {
-      "checksum": "8d83a878dc4c4958416ba0ba7c465295"
+      "checksum": "4fbabbafb913e70157c72a493229e045"
     },
     "packrat/desc/rappdirs": {
-      "checksum": "1156e307d1296a61c533b4338765270b"
+      "checksum": "d8977efd9efef1b734aaf39f4a21c680"
     },
     "packrat/desc/RColorBrewer": {
-      "checksum": "e921a2b48a3466edd651f0b78d645fdc"
+      "checksum": "88c671a06314732add491d1c2a21f8d7"
     },
     "packrat/desc/Rcpp": {
-      "checksum": "a22bb192c2483379cdde13881e8f04a0"
+      "checksum": "c3f5dcc6b58b9e4a5e63a2233c69a789"
     },
     "packrat/desc/rematch": {
-      "checksum": "5b0b08f2867ef6534c4ce2929f4d5c0a"
+      "checksum": "e745671efa072cdcdd1c5beb26c8fef5"
     },
     "packrat/desc/rematch2": {
-      "checksum": "6649fdaed92f9d9426d8bdd5857c9ce6"
+      "checksum": "4b3d95c7ee70fd325be8dbe0c77774d0"
     },
     "packrat/desc/rlang": {
-      "checksum": "7803770077784d39a37ac04d3d853786"
+      "checksum": "e6b5f07db294ad5b226e4a03bdf6a852"
     },
     "packrat/desc/rprojroot": {
-      "checksum": "ed1adad8867440ad3b96dd1c5091d842"
+      "checksum": "72bf1f7543bc9b49e7115fb70d30920e"
     },
     "packrat/desc/rstudioapi": {
-      "checksum": "d53f2dd2206d0bae7e9569358ba48f32"
+      "checksum": "ef880f3ff94176d2793ad3e923e89a5b"
     },
     "packrat/desc/sass": {
-      "checksum": "de57bd53730e0b587dba201211d978c9"
+      "checksum": "0bb25ecb7bf0fbe66ffb3a7e421e3b51"
     },
     "packrat/desc/scales": {
-      "checksum": "848f9b47f5b26ab1049731b7d06aed1d"
+      "checksum": "eeb8d65377f0439facf59f2a7938d3de"
     },
     "packrat/desc/shiny": {
-      "checksum": "78eb68fc82af7f40e00de902d0305da7"
+      "checksum": "8f4c6c6ab208b43133475ef1a9a8e892"
     },
     "packrat/desc/shinytest": {
-      "checksum": "aa7c01bf44e002635a8a0e72cf9c26af"
+      "checksum": "1d09678cb8b619f0e7331d6c8efb0b87"
     },
     "packrat/desc/showimage": {
-      "checksum": "ff8bd2f51e6d12873bf775ef6c4a0aa3"
+      "checksum": "85370b4a9b59ac444091180c855fa5d9"
     },
     "packrat/desc/sourcetools": {
-      "checksum": "966c4e942ba212e977a95f8fff0eb356"
+      "checksum": "3c9c1723a4edd5d2c9ec104e792e4e7b"
     },
     "packrat/desc/stringi": {
-      "checksum": "393458ead0ed6e1912d6f0c76244d832"
+      "checksum": "da1580503edcfbb57e1d8bc18f792a8a"
     },
     "packrat/desc/stringr": {
-      "checksum": "eab92d1eca86a5f575ee23cdebd6e70f"
+      "checksum": "d9e80c1ba3a5543d278e8a6c69b02619"
     },
     "packrat/desc/sys": {
-      "checksum": "29805fd58d06a5d7720469c95bbbfa1f"
+      "checksum": "aee1ed7c5155e1e4bdfda9562c15d80f"
     },
     "packrat/desc/testthat": {
-      "checksum": "6bb6b19c74aa35c9318f92c2db278e69"
+      "checksum": "7a661529a7c14925e764d38e4bdd18e7"
     },
     "packrat/desc/tibble": {
-      "checksum": "aee15d596e352c8bc04eaa6c60b60de8"
+      "checksum": "04795e375b898eb532eb071fabcfb0fd"
     },
     "packrat/desc/utf8": {
-      "checksum": "a6333675a1d8cff4d92914270dfe470b"
+      "checksum": "19f10ad6f0826afd7a65b4688a056878"
     },
     "packrat/desc/vctrs": {
-      "checksum": "f7fbc48b6cce55bb69f692d9c5bed18a"
+      "checksum": "971ab488180d6243929bc8220dc404b8"
     },
     "packrat/desc/viridisLite": {
-      "checksum": "cadb310edb42e382b45f317c95a82f3b"
+      "checksum": "573c56ab0d8f71df10d384498f7c7b5c"
     },
     "packrat/desc/waldo": {
-      "checksum": "98f6fd9212ff12964ab3f219149262d0"
+      "checksum": "d58c955c693c4a290fa1168e434127a2"
     },
     "packrat/desc/webdriver": {
-      "checksum": "486c0477d626e2ccbe022482d92c8bba"
+      "checksum": "f421d48c892141357256f6d0d59e48ea"
     },
     "packrat/desc/withr": {
-      "checksum": "d1b9e44c3de139534681a9aab456c304"
+      "checksum": "517834cc751341c33d80177c43b671ad"
     },
     "packrat/desc/xtable": {
-      "checksum": "526e6f7be3cf3228226e3aab27258be6"
+      "checksum": "7ef5fb6ae4d26002d2cb355f8a1ba749"
     },
     "packrat/desc/yaml": {
-      "checksum": "a5c8026f8dbd6fdbfb913829911a4ed8"
+      "checksum": "481c2cdcf1c1c401f90c1657cfc6bea1"
     },
     "packrat/packrat.lock": {
-      "checksum": "9dc7145c8d3431686d1780e00ed04422"
+      "checksum": "396d2a1a0afcca13f372fb257cfef5d0"
     },
     "README.md": {
-      "checksum": "8c46198a88335746015f59f6007f72bf"
+      "checksum": "2aa0b7e98b5069960fd58d24328996a5"
     },
     "server.R": {
       "checksum": "92aa5c2e58aac6827b8a75ae9ed46a2c"
@@ -2578,28 +2614,28 @@
       "checksum": "3984bbc104f09630294391b152037f80"
     },
     "tests/shinytest/mytest-expected/002.json": {
-      "checksum": "c124a1eee3a7f4eca9cc1d4c0a299947"
+      "checksum": "54ad31758474c85dd5f135f8af5fd835"
     },
     "tests/shinytest/mytest-expected/002.png": {
-      "checksum": "69e4e326a92a6034a4a128ad2f33f1bf"
+      "checksum": "35bf7a5138b5cc306be9a79d67b2a0ff"
     },
     "tests/shinytest/mytest-expected/003.json": {
-      "checksum": "0222c9b1028e26aeabcde6b09cb83267"
+      "checksum": "e6c0cbfa0be4979a8fd7350f513a67d5"
     },
     "tests/shinytest/mytest-expected/003.png": {
-      "checksum": "e6c0f734fba266f5592fcaeba4fb4333"
+      "checksum": "4cbd6148147f5002023fd3c3a011cf00"
     },
     "tests/shinytest/mytest.R": {
-      "checksum": "734eb1e89d57d6449202695bd7898faf"
+      "checksum": "d65f77f19ed5d68ba0543263a6602d54"
     },
     "tests/shinytest/philtest-expected/001.json": {
-      "checksum": "23e984d4cee25aa2c7e92b285499c7c8"
+      "checksum": "0eb879280706a828b5e3954c755d0f91"
     },
     "tests/shinytest/philtest-expected/001.png": {
-      "checksum": "67772e61ca33544e171ba9935926384d"
+      "checksum": "e7050e2830cd990dadf7bf55e880f610"
     },
     "tests/shinytest/philtest.R": {
-      "checksum": "cb17597f1212a362193bbe930ad634b2"
+      "checksum": "450ffd825d1a318d637a104d0a94e51c"
     },
     "ui.R": {
       "checksum": "834f34ba0035a63aa4f22051a66ebac1"
