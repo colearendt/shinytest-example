@@ -54,60 +54,57 @@ jobs:
       #    key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1
       #    restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
-      # TODO: Better sysreqs handling
       - name: Install system dependencies
         if: runner.os == 'Linux'
-        env:
-          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
+        shell: Rscript {0}
         run: |
-          sudo apt-get install -y \
-            libcurl4-openssl-dev
+          # do not activate
+          remotes::install_cran("renv")
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          lapply(unique(renv::dependencies()$Package), function(pkg) {
+            pak::pkg_system_requirements(pkg, execute = TRUE)
+          })
+
       - name: Install dependencies
+        shell: Rscript {0}
         run: |
-          install.packages("renv")
+          remotes::install_cran("renv")
           source("renv/activate.R")
           renv::restore()
-          renv::activate()
-        shell: Rscript {0}
 
-      #- name: Find PhantomJS path
-      #  id: phantomjs
-      #  run: |
-      #    echo "::set-output name=path::$(Rscript -e 'cat(shinytest:::phantom_paths()[[1]])')"
-      #- name: Cache PhantomJS
-      #  uses: actions/cache@v1
-      #  with:
-      #    path: ${{ steps.phantomjs.outputs.path }}
-      #    key: ${{ runner.os }}-phantomjs
-      #    restore-keys: ${{ runner.os }}-phantomjs
+      - name: Find PhantomJS path
+        id: phantomjs
+        run: |
+          echo "::set-output name=path::$(Rscript -e 'renv::activate(); cat(shinytest:::phantom_paths()[[1]])')"
+      - name: Cache PhantomJS
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.phantomjs.outputs.path }}
+          key: ${{ matrix.config.os }}-phantomjs
+          restore-keys: ${{ matrix.config.os }}-phantomjs
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
-          source("renv/activate.R")
-          .libPaths()
-          packageVersion("shinytest")
-          renv::status()
-          system("phantomjs --version")
-          options(install.packages.check.source = "no")
+          renv::activate()
           if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
-          system("phantomjs --version")
+
       - name: Run tests
         shell: Rscript {0}
         run: |
-          source("renv/activate.R")
-          webdriver::install_phantomjs()
-          system("phantomjs --version")
+          renv::activate()
           shiny::runTests(".", assert = TRUE)
+
       - name: Check test results
         shell: Rscript {0}
         run: |
-          source("renv/activate.R")
+          renv::activate()
           results <- shinytest::textTestDiff()
           clean_results <- attr(results, "status")
           if (any(clean_results == "reject")) {
             cat(results)
             stop("Failing tests on differences")
           }
+
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@master
