@@ -39,29 +39,29 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: r-lib/actions/setup-r@master
+        id: install-r
         with:
           r-version: ${{ matrix.config.r }}
 
       - uses: r-lib/actions/setup-pandoc@master
 
-      - name: Query dependencies
+      - name: Make sure renv exists
         shell: Rscript {0}
         run: |
           if (system.file(package = "renv") == "") install.packages("renv")
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
 
       - name: Cache R packages
         uses: actions/cache@v1
         with:
           path: renv/library
-          key: ${{ runner.config.os }}-${{ hashFiles('.github/R-version') }}-1
-          restore-keys: ${{ runner.config.os }}-${{ hashFiles('.github/R-version') }}-1-
+          key: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-${{ hashFiles('renv.lock') }}
+          restore-keys: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-
 
       - name: Install system dependencies
         if: runner.os == 'Linux'
         shell: Rscript {0}
         run: |
-          # do not record `pak` activity
+          # do not record `jsonlite` / `pak` activity
           renv::deactivate()
           install.packages("jsonlite")
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
@@ -70,7 +70,7 @@ jobs:
             try(pak::pkg_system_requirements(pkg, execute = TRUE))
           })
 
-      - name: Install dependencies
+      - name: Install app dependencies
         shell: Rscript {0}
         run: |
           renv::restore()

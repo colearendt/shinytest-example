@@ -1,0 +1,90 @@
+# from: https://github.com/rstudio/shiny-testing-gha-example/blob/single_platform_snapshot/.github/workflows/run-tests.yaml
+on:
+  push:
+    paths:
+      - 'renv.lock'
+  pull_request:
+    paths:
+      - 'renv.lock'
+
+name: Update `manifest.json`
+
+jobs:
+  manifest:
+    runs-on: ${{ matrix.config.os }}
+
+    name: Sync manifest.json with renv.lock
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {os: ubuntu-18.04, r: 'release', rspm: "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest"}
+
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      RSPM: ${{ matrix.config.rspm }}
+
+    steps:
+
+      - uses: actions/checkout@v2
+        if: github.event_name == 'push'
+      - uses: r-lib/actions/pr-fetch@master
+        name: Git Pull (PR)
+        if: github.event_name == 'pull_request'
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: r-lib/actions/setup-r@master
+        id: install-r
+        with:
+          r-version: ${{ matrix.config.r }}
+
+      - uses: r-lib/actions/setup-pandoc@master
+
+      - name: Make sure renv exists
+        shell: Rscript {0}
+        run: |
+          if (system.file(package = "renv") == "") install.packages("renv")
+
+      - name: Cache R packages
+        uses: actions/cache@v1
+        with:
+          path: renv/library
+          key: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-${{ hashFiles('renv.lock') }}
+          restore-keys: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-
+
+      - name: Install system dependencies
+        if: runner.os == 'Linux'
+        shell: Rscript {0}
+        run: |
+          # do not record `pak` activity
+          renv::deactivate()
+          install.packages("jsonlite")
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          pkgs <- names(jsonlite::read_json("manifest.json")$packages)
+          lapply(pkgs, function(pkg) {
+            try(pak::pkg_system_requirements(pkg, execute = TRUE))
+          })
+
+      - name: Sync manifest.json
+        shell: Rscript {0}
+        run: |
+          if (system.file(package = "rsconnect") == "") install.packages("rsconnect")
+          rsconnect::writeManifest(appDir = "./")
+
+      - name: Git Config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add manifest.json && git commit -m 'manifest.json (GitHub Actions)' || echo "No manifest.json changes to commit"
+
+      - name: Git Push (PR)
+        uses: r-lib/actions/pr-push@master
+        if: github.event_name == 'pull_request'
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Git Push (main)
+        if: github.event_name == 'push'
+        run: |
+          git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to push"
