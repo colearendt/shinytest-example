@@ -19,7 +19,7 @@ jobs:
           #- {os: windows-latest, r: 'release'}
           # disabled due to race conditions / parallelism
           #- {os: macOS-latest, r: 'release'}
-          - {os: ubuntu-20.04, r: 'release', rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"}
+          - {os: ubuntu-18.04, r: 'release', rspm: "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest"}
 
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
@@ -46,57 +46,65 @@ jobs:
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
         shell: Rscript {0}
 
-      - name: Cache R packages
-        if: runner.os != 'Windows'
-        uses: actions/cache@v1
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1
-          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+      #- name: Cache R packages
+      #  if: runner.os != 'Windows'
+      #  uses: actions/cache@v1
+      #  with:
+      #    path: ${{ env.R_LIBS_USER }}
+      #    key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1
+      #    restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
-      # TODO: Better sysreqs handling
       - name: Install system dependencies
         if: runner.os == 'Linux'
-        env:
-          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
-        run: |
-          sudo apt-get install -y \
-            libcurl4-openssl-dev \
-            phantomjs
-      - name: Install dependencies
-        run: |
-          install.packages("renv")
-          renv::restore()
         shell: Rscript {0}
+        run: |
+          # do not activate
+          remotes::install_cran("renv")
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          lapply(unique(renv::dependencies()$Package), function(pkg) {
+            pak::pkg_system_requirements(pkg, execute = TRUE)
+          })
+
+      - name: Install dependencies
+        shell: Rscript {0}
+        run: |
+          remotes::install_cran("renv")
+          source("renv/activate.R")
+          renv::restore()
 
       - name: Find PhantomJS path
         id: phantomjs
         run: |
-          echo "::set-output name=path::$(Rscript -e 'cat(shinytest:::phantom_paths()[[1]])')"
+          echo "::set-output name=path::$(Rscript -e 'renv::activate(); cat(shinytest:::phantom_paths()[[1]])')"
       - name: Cache PhantomJS
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: ${{ steps.phantomjs.outputs.path }}
-          key: ${{ runner.os }}-phantomjs
-          restore-keys: ${{ runner.os }}-phantomjs
+          key: ${{ matrix.config.os }}-phantomjs
+          restore-keys: ${{ matrix.config.os }}-phantomjs
       - name: Install PhantomJS
         shell: Rscript {0}
         run: |
-          options(install.packages.check.source = "no")
+          renv::activate()
           if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
+
       - name: Run tests
         shell: Rscript {0}
         run: |
+          renv::activate()
           shiny::runTests(".", assert = TRUE)
+
       - name: Check test results
         shell: Rscript {0}
         run: |
+          renv::activate()
           results <- shinytest::textTestDiff()
           clean_results <- attr(results, "status")
           if (any(clean_results == "reject")) {
             cat(results)
             stop("Failing tests on differences")
           }
+
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@master
