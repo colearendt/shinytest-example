@@ -19,7 +19,9 @@ jobs:
           api-key: ${{ secrets.CONNECT_API_KEY }}
           access-type: all
           show-logs: true
-          # for more on app identifiers or multiple app deployments, see
+          # For more on app identifiers or multiple app deployments, see
           # https://github.com/rstudio/actions/tree/main/connect-publish#dir
+          # Deploy app located at `./` to `prshinytest-example-app1234`
+          # with vanity url `/pr/shinytest-example-app/1234`
           dir: |
-            ./:/pr/shinytest-example-app/${{ github.head_ref }}
+            ./:/pr/shinytest-example-app/${{ github.event.number }}
