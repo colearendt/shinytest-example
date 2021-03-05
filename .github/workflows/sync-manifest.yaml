@@ -74,10 +74,8 @@ jobs:
         shell: Rscript {0}
         run: |
           # do not record `rsconnect` activity
-          renv::deactivate()
           if (system.file(package = "rsconnect") == "") install.packages("rsconnect")
           rsconnect::writeManifest(appDir = "./")
-          renv::activate()
 
       - name: Git Config
         run: |
