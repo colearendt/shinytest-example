@@ -48,7 +48,7 @@ This is a more advanced and more flexible workflow but is more complex and
 tricky to set up properly.
 
 > If you create your own `manifest.json`, you may need to remove your `.Rprofile`
-> before generating, or edit the `manifest.json` and remove the `.Rprofile`
+> before generating it, or edit the `manifest.json` and remove the `.Rprofile`
 > record from "files".
 > 
 > This will be improved in a future version of the GitHub Action
@@ -83,6 +83,14 @@ application has changed. Tests may need to be updated (or code fixed) to address
 the changes. To do this, you can run the tests locally or address any code
 changes necessary
 
+## Future Exploration (for users)
+
+Some other areas you can explore for your own apps / assets:
+
+- Implement CI workflows for your projects where it makes sense (don't automate until you need to!)
+- Only deploy to Connect if tests complete successfully
+- Change configuration of what tests run where / etc.
+
 ## Future Development Work (for developers)
 
 Our goal is to continue improving this process and making it easier! Some
@@ -101,10 +109,4 @@ patterns](https://github.com/r-lib/actions) orient mostly around packages)
 - Package up more of these items as re-usable components to simplify the user workflows
 - Better patterns around using / accepting test changes, artifacts, etc.
 - Figure out cross-operating-system compatibility issues
-
-## Future Exploration (for users)
-
-Some other areas you can explore for your own apps / assets:
-
-- Only deploy to Connect if tests complete successfully
-- Change configuration of what tests run where / etc.
+- Make renv easier to use in GHA
