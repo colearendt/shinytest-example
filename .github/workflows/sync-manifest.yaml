@@ -45,7 +45,10 @@ jobs:
       - name: Make sure renv exists
         shell: Rscript {0}
         run: |
-          if (system.file(package = "renv") == "") install.packages("renv")
+          if (system.file(package = "renv") == "") {
+            install.packages("renv")
+            renv::snapshot()
+          }
 
       - name: Cache R packages
         uses: actions/cache@v1
