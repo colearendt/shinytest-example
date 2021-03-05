@@ -1,7 +1,11 @@
 # from: https://github.com/rstudio/shiny-testing-gha-example/blob/single_platform_snapshot/.github/workflows/run-tests.yaml
 on:
   push:
+    branches:
+      - main
   pull_request:
+    branches:
+      - main
 
 name: Run shinytest
 
