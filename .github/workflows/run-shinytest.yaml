@@ -72,6 +72,7 @@ jobs:
           lapply(pkgs, function(pkg) {
             try(pak::pkg_system_requirements(pkg, execute = TRUE))
           })
+          renv::activate()
 
       - name: Install app dependencies
         shell: Rscript {0}

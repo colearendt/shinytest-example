@@ -69,6 +69,7 @@ jobs:
           lapply(pkgs, function(pkg) {
             try(pak::pkg_system_requirements(pkg, execute = TRUE))
           })
+          renv::activate()
 
       - name: Sync manifest.json
         shell: Rscript {0}
