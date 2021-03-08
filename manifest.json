@@ -2326,16 +2326,16 @@
   },
   "files": {
     ".github/workflows/rstudio-connect-main.yaml": {
-      "checksum": "1e234bb2434fb9b7717f707d7b2e4aae"
+      "checksum": "fcf2f3eafeb1b86d359bb64f68a83c66"
     },
     ".github/workflows/rstudio-connect-pr.yaml": {
-      "checksum": "25ca00d37b6cf7475f4c2c299d94d371"
+      "checksum": "317ec364ab49a3c5af98bcbc32de9a9d"
     },
     ".github/workflows/run-shinytest.yaml": {
-      "checksum": "9f7da58086b238fff82b5649c1251493"
+      "checksum": "891f0c672a85c2675090b7023fd1c429"
     },
     ".github/workflows/sync-manifest.yaml": {
-      "checksum": "e3d40f2153970e7da92cb3ab9a159d2e"
+      "checksum": "23e3f090ffeb837629dfd862582e723e"
     },
     ".Rprofile": {
       "checksum": "57f9047cb06fdbef821b61f49e21406e"
@@ -2608,30 +2608,30 @@
       "checksum": "92aa5c2e58aac6827b8a75ae9ed46a2c"
     },
     "tests/shinytest.R": {
-      "checksum": "10f7ad8946705869312f720c766a381d"
+      "checksum": "48a5d87647404bbf1f3098c7147cc8af"
     },
-    "tests/shinytest/mytest-expected/001.download": {
+    "tests/shinytest/mytest-expected-linux/001.download": {
       "checksum": "3984bbc104f09630294391b152037f80"
     },
-    "tests/shinytest/mytest-expected/002.json": {
+    "tests/shinytest/mytest-expected-linux/002.json": {
       "checksum": "54ad31758474c85dd5f135f8af5fd835"
     },
-    "tests/shinytest/mytest-expected/002.png": {
+    "tests/shinytest/mytest-expected-linux/002.png": {
       "checksum": "35bf7a5138b5cc306be9a79d67b2a0ff"
     },
-    "tests/shinytest/mytest-expected/003.json": {
+    "tests/shinytest/mytest-expected-linux/003.json": {
       "checksum": "e6c0cbfa0be4979a8fd7350f513a67d5"
     },
-    "tests/shinytest/mytest-expected/003.png": {
+    "tests/shinytest/mytest-expected-linux/003.png": {
       "checksum": "4cbd6148147f5002023fd3c3a011cf00"
     },
     "tests/shinytest/mytest.R": {
       "checksum": "d65f77f19ed5d68ba0543263a6602d54"
     },
-    "tests/shinytest/philtest-expected/001.json": {
+    "tests/shinytest/philtest-expected-linux/001.json": {
       "checksum": "0eb879280706a828b5e3954c755d0f91"
     },
-    "tests/shinytest/philtest-expected/001.png": {
+    "tests/shinytest/philtest-expected-linux/001.png": {
       "checksum": "e7050e2830cd990dadf7bf55e880f610"
     },
     "tests/shinytest/philtest.R": {
