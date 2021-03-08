@@ -16,6 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
+          # Match your manifest file R version
           - {os: ubuntu-18.04, r: '4.0.2', rspm: "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest"}
 
     env:
@@ -39,17 +40,29 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@master
 
-      - name: Make sure renv exists
-        shell: Rscript {0}
-        run: |
-          if (system.file(package = "renv") == "") install.packages("renv")
-
       - name: Cache R packages
         uses: actions/cache@v1
         with:
           path: renv/library
           key: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-${{ hashFiles('renv.lock') }}
           restore-keys: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-
+
+      - name: Make sure renv exists
+        shell: Rscript {0}
+        run: |
+          if (system.file(package = "renv") == "") install.packages("renv")
+
+      - name: Verify R version matches
+        shell: Rscript {0}
+        run: |
+          if (system.file(package = "jsonlite") == "") install.packages("jsonlite")
+          # Assert that R versions match
+          stopifnot(
+            compareVersion(
+              paste0(R.version$major, ".", R.version$minor),
+              jsonlite::read_json("renv.lock")$R$Version
+            ) == 0
+          )
 
       - name: Install system dependencies
         if: runner.os == 'Linux'
