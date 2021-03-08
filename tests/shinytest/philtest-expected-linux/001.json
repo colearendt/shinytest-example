@@ -1,7 +1,7 @@
 {
   "input": {
     "api": "tylenol",
-    "end_date": "2021-03-02",
+    "end_date": "2020-03-02",
     "seriousness": "1",
     "start_date": "2004-01-01",
     "submit": 3
@@ -30,7 +30,7 @@
     },
     "message": "5) Download the data:",
     "plt": {
-      "src": "[image data sha1: 0ec9b3cf8961c198500649c606e07cf48ef987d1]",
+      "src": "[image data sha1: f1e2c802d1d54d1f0657ea021d4ba02c62c61f72]",
       "width": 714,
       "height": 640,
       "alt": "Plot object",
@@ -50,20 +50,20 @@
             "domain": {
               "left": 0.4,
               "right": 10.6,
-              "bottom": -631.675,
-              "top": 13265.175,
+              "bottom": -541.365,
+              "top": 11368.665,
               "discrete_limits": {
                 "x": [
-                  "FATIGUE",
                   "NAUSEA",
+                  "FATIGUE",
                   "PAIN",
                   "DYSPNOEA",
-                  "HEADACHE",
-                  "DRUG\nINEFFECTIVE",
                   "DIARRHOEA",
+                  "HEADACHE",
                   "VOMITING",
                   "DEATH",
-                  "ARTHRALGIA"
+                  "PYREXIA",
+                  "DRUG\nINEFFECTIVE"
                 ]
               }
             },
@@ -72,7 +72,7 @@
               "y": "Count"
             },
             "range": {
-              "left": 65.0306849315069,
+              "left": 59.0306849315069,
               "right": 708.520547945205,
               "bottom": 562.40067923369,
               "top": 51.470904109589
