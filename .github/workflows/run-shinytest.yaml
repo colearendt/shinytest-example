@@ -74,17 +74,17 @@ jobs:
         if: runner.os == 'Linux'
         shell: Rscript {0}
         run: |
-          # do not record `jsonlite` / `pak` activity
+          pkgs <- names(jsonlite::read_json("renv.lock")$Packages)
+          # do not record `pak` activity
           renv::deactivate()
-          install.packages("jsonlite")
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
-          pkgs <- names(jsonlite::read_json("manifest.json")$packages)
           lapply(pkgs, function(pkg) {
-            try(pak::pkg_system_requirements(pkg, execute = TRUE))
+            pak::pkg_system_requirements(pkg, execute = TRUE)
           })
+          remove.packages("pak")
           renv::activate()
 
-      - name: Restore renv
+      - name: Restore renv packages
         shell: Rscript {0}
         run: |
           renv::restore()
