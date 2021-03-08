@@ -96,14 +96,14 @@ jobs:
         run: |
           shiny::runTests(".", assert = TRUE)
 
-      - name: Check test results
+      - name: Inspect failing shinytest results
+        if: failure()
         shell: Rscript {0}
         run: |
           results <- shinytest::textTestDiff()
           clean_results <- attr(results, "status")
           if (any(clean_results == "reject")) {
             cat(results)
-            stop("Failing tests on differences")
           }
 
       - name: Upload test results
