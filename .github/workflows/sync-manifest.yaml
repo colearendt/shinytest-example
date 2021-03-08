@@ -33,6 +33,13 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
+      # Connect does not like `renv`'s `./.Rprofile`
+      # Removing file as Connect listens to the `./manifest.json` files
+      - name: Remove `.Rprofile`
+        shell: bash
+        run: |
+          rm .Rprofile
+
       - uses: r-lib/actions/setup-r@master
         id: install-r
         with:
