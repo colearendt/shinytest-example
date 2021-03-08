@@ -12,6 +12,8 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
 
+      # Connect does not like `renv`'s `./.Rprofile`
+      # Removing from deployment as Connect listens to the `./manifest.json` file
       - name: Remove `.Rprofile`
         shell: bash
         run: |
