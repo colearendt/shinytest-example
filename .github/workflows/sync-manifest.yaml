@@ -53,7 +53,7 @@ jobs:
           if (system.file(package = "renv") == "") install.packages("renv")
 
       - name: Verify R version matches
-        shell: Rscript {0}
+        shell: Rscript --vanilla {0}
         run: |
           if (system.file(package = "jsonlite") == "") install.packages("jsonlite")
           # Assert that R versions match
@@ -66,17 +66,16 @@ jobs:
 
       - name: Install system dependencies
         if: runner.os == 'Linux'
-        shell: Rscript {0}
+        # do not record `pak` activity
+        shell: Rscript --vanilla {0}
         run: |
-          pkgs <- names(jsonlite::read_json("renv.lock")$Packages)
-          # do not record `pak` activity
-          renv::deactivate()
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          if (system.file(package = "jsonlite") == "") install.packages("jsonlite")
+          pkgs <- names(jsonlite::read_json("renv.lock")$Packages)
           lapply(pkgs, function(pkg) {
             pak::pkg_system_requirements(pkg, execute = TRUE)
           })
           remove.packages("pak")
-          renv::activate()
 
       - name: Restore renv packages
         shell: Rscript {0}
