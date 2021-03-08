@@ -109,16 +109,6 @@ jobs:
         run: |
           shiny::runTests(".", assert = TRUE)
 
-      - name: Inspect failing shinytest results
-        if: failure()
-        shell: Rscript {0}
-        run: |
-          results <- shinytest::textTestDiff()
-          clean_results <- attr(results, "status")
-          if (any(clean_results == "reject")) {
-            cat(results)
-          }
-
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@master
