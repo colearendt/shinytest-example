@@ -2332,13 +2332,10 @@
       "checksum": "317ec364ab49a3c5af98bcbc32de9a9d"
     },
     ".github/workflows/run-shinytest.yaml": {
-      "checksum": "891f0c672a85c2675090b7023fd1c429"
+      "checksum": "f94dbaec51ee8959517164e98f1b6cfe"
     },
     ".github/workflows/sync-manifest.yaml": {
-      "checksum": "23e3f090ffeb837629dfd862582e723e"
-    },
-    ".Rprofile": {
-      "checksum": "57f9047cb06fdbef821b61f49e21406e"
+      "checksum": "71338c55ab903225b2132ee9ad3cbb4f"
     },
     "packrat/desc/askpass": {
       "checksum": "a2b71352f87065d4593e4f6431271c3e"
@@ -2611,31 +2608,31 @@
       "checksum": "48a5d87647404bbf1f3098c7147cc8af"
     },
     "tests/shinytest/mytest-expected-linux/001.download": {
-      "checksum": "3984bbc104f09630294391b152037f80"
+      "checksum": "753f3b02e02980cec6c6d339d01dde33"
     },
     "tests/shinytest/mytest-expected-linux/002.json": {
-      "checksum": "54ad31758474c85dd5f135f8af5fd835"
+      "checksum": "d0d66afcc1a5fe892384de8ecfd22975"
     },
     "tests/shinytest/mytest-expected-linux/002.png": {
-      "checksum": "35bf7a5138b5cc306be9a79d67b2a0ff"
+      "checksum": "e93ddd2bf592bf721036a36125893e71"
     },
     "tests/shinytest/mytest-expected-linux/003.json": {
-      "checksum": "e6c0cbfa0be4979a8fd7350f513a67d5"
+      "checksum": "88ee0a15f0dde5c464441d37dd7e9fc9"
     },
     "tests/shinytest/mytest-expected-linux/003.png": {
-      "checksum": "4cbd6148147f5002023fd3c3a011cf00"
+      "checksum": "3874cc03b12f88ca2f9a1b650dfedafb"
     },
     "tests/shinytest/mytest.R": {
-      "checksum": "d65f77f19ed5d68ba0543263a6602d54"
+      "checksum": "3a24fc38afb775db35ffa1439896562c"
     },
     "tests/shinytest/philtest-expected-linux/001.json": {
-      "checksum": "0eb879280706a828b5e3954c755d0f91"
+      "checksum": "faa628ba437a9e8e4fb4ad4d21cebe88"
     },
     "tests/shinytest/philtest-expected-linux/001.png": {
-      "checksum": "e7050e2830cd990dadf7bf55e880f610"
+      "checksum": "2a7d82b24748d9379f0703a1b7718309"
     },
     "tests/shinytest/philtest.R": {
-      "checksum": "450ffd825d1a318d637a104d0a94e51c"
+      "checksum": "069c5d232789f06a21c8e686e445eca7"
     },
     "ui.R": {
       "checksum": "834f34ba0035a63aa4f22051a66ebac1"
