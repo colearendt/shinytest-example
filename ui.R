@@ -28,7 +28,6 @@ fluidPage(
             br()
         ),
         column(9,
-            #textOutput("error"),
             plotOutput("plt", width = "auto", height = "640")
         )
     ),

@@ -108,7 +108,10 @@ function(input, output) {
 
     output$message <- renderText(result_message())
 
-    output$tble <- renderDataTable({req(api_data()); return(api_data())})
+    output$tble <- renderDataTable({
+      req(api_data())
+      api_data()
+    })
     output$download_button <- renderUI({
         req(api_data())
         downloadButton("download_data", 'Download CSV')
