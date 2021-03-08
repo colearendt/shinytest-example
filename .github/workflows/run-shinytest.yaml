@@ -93,7 +93,7 @@ jobs:
         run: |
           renv::activate()
 
-          - name: Restore renv packages
+      - name: Restore renv packages
         shell: Rscript {0}
         run: |
           renv::restore()
