@@ -33,13 +33,6 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Connect does not like `renv`'s `./.Rprofile`
-      # Removing file as Connect listens to the `./manifest.json` files
-      - name: Remove `.Rprofile`
-        shell: bash
-        run: |
-          rm .Rprofile
-
       - uses: r-lib/actions/setup-r@master
         id: install-r
         with:
@@ -94,6 +87,9 @@ jobs:
         shell: Rscript {0}
         run: |
           if (system.file(package = "rsconnect") == "") install.packages("rsconnect")
+          # Connect does not like `renv`'s `./.Rprofile`
+          # Removing file as Connect listens to the `./manifest.json` files
+          unlink(".Rprofile")
           rsconnect::writeManifest(appDir = "./")
 
       - name: Git Config
