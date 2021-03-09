@@ -1,28 +1,21 @@
 # from: https://github.com/rstudio/shiny-testing-gha-example/blob/single_platform_snapshot/.github/workflows/run-tests.yaml
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    paths:
+      - 'renv.lock'
 
-name: Run shinytest
+name: Update `manifest.json`
 
 jobs:
-  run-tests:
+  manifest:
     runs-on: ${{ matrix.config.os }}
 
-    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
+    name: Sync manifest.json with renv.lock
 
     strategy:
       fail-fast: false
       matrix:
         config:
-          # disabled b/c shinytest on windows has an error
-          #- {os: windows-latest, r: 'release'}
-          # disabled due to race conditions / parallelism
-          #- {os: macOS-latest, r: 'release'}
           # Match your manifest file R version
           - {os: ubuntu-18.04, r: '4.0.2', rspm: "https://packagemanager.rstudio.com/cran/__linux__/bionic/latest"}
 
@@ -31,11 +24,6 @@ jobs:
       RSPM: ${{ matrix.config.rspm }}
 
     steps:
-      # do not convert line feeds in windows
-      - name: Windows git setup
-        if: runner.os == 'Windows'
-        run:
-          git config --global core.autocrlf false
 
       - uses: actions/checkout@v2
 
@@ -86,29 +74,22 @@ jobs:
         run: |
           renv::restore()
 
-      - name: Find PhantomJS path
-        id: phantomjs
-        run: |
-          echo "::set-output name=path::$(Rscript -e 'cat(shinytest:::phantom_paths()[[1]])')"
-      - name: Cache PhantomJS
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.phantomjs.outputs.path }}
-          key: ${{ matrix.config.os }}-phantomjs
-          restore-keys: ${{ matrix.config.os }}-phantomjs
-      - name: Install PhantomJS
+      - name: Sync manifest.json
         shell: Rscript {0}
         run: |
-          if (!shinytest::dependenciesInstalled()) shinytest::installDependencies()
+          if (system.file(package = "rsconnect") == "") install.packages("rsconnect")
+          # Connect does not like `renv`'s `./.Rprofile`
+          # Removing file as Connect listens to the `./manifest.json` files
+          unlink(".Rprofile")
+          rsconnect::writeManifest(appDir = "./")
 
-      - name: Run tests
-        shell: Rscript {0}
+      - name: Git Config
         run: |
-          shiny::runTests(".", assert = TRUE)
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add manifest.json && git commit -m 'manifest.json (GitHub Actions)' || echo "No manifest.json changes to commit"
 
-      - name: Upload test results
-        if: failure()
-        uses: actions/upload-artifact@master
-        with:
-          name: ${{ runner.os }}-r${{ matrix.config.r }}-tests
-          path: tests
+      - name: Git Push
+        if: github.event_name == 'push'
+        run: |
+          git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to push"

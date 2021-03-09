@@ -12,6 +12,13 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
 
+      # Connect does not like `renv`'s `./.Rprofile`
+      # Removing from deployment as Connect listens to the `./manifest.json` file
+      - name: Remove `.Rprofile`
+        shell: bash
+        run: |
+          rm .Rprofile
+
       - name: Publish the PR
         uses: rstudio/actions/connect-publish@main
         with:
@@ -19,7 +26,9 @@ jobs:
           api-key: ${{ secrets.CONNECT_API_KEY }}
           access-type: all
           show-logs: true
-          # for more on app identifiers or multiple app deployments, see
+          # For more on app identifiers or multiple app deployments, see
           # https://github.com/rstudio/actions/tree/main/connect-publish#dir
+          # Deploy app located at `./` to `prshinytest-example-app1234`
+          # with vanity url `/pr/shinytest-example-app/1234`
           dir: |
-            ./:/pr/shinytest-example-app/${{ github.head_ref }}
+            ./:/pr/shinytest-example-app/${{ github.event.number }}
