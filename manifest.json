@@ -2332,10 +2332,10 @@
       "checksum": "317ec364ab49a3c5af98bcbc32de9a9d"
     },
     ".github/workflows/run-shinytest.yaml": {
-      "checksum": "f94dbaec51ee8959517164e98f1b6cfe"
+      "checksum": "02fe5bd18ecd28f6b5f2cba3aa3234e4"
     },
     ".github/workflows/sync-manifest.yaml": {
-      "checksum": "71338c55ab903225b2132ee9ad3cbb4f"
+      "checksum": "e6150505d49d4f0883069f6d2a35d57b"
     },
     "packrat/desc/askpass": {
       "checksum": "a2b71352f87065d4593e4f6431271c3e"
@@ -2602,7 +2602,7 @@
       "checksum": "2aa0b7e98b5069960fd58d24328996a5"
     },
     "server.R": {
-      "checksum": "92aa5c2e58aac6827b8a75ae9ed46a2c"
+      "checksum": "95b728191757fe193d35fd0892d9835f"
     },
     "tests/shinytest.R": {
       "checksum": "48a5d87647404bbf1f3098c7147cc8af"
@@ -2614,28 +2614,28 @@
       "checksum": "d0d66afcc1a5fe892384de8ecfd22975"
     },
     "tests/shinytest/mytest-expected-linux/002.png": {
-      "checksum": "e93ddd2bf592bf721036a36125893e71"
+      "checksum": "779e93913840b438ee6e8ea314957040"
     },
     "tests/shinytest/mytest-expected-linux/003.json": {
       "checksum": "88ee0a15f0dde5c464441d37dd7e9fc9"
     },
     "tests/shinytest/mytest-expected-linux/003.png": {
-      "checksum": "3874cc03b12f88ca2f9a1b650dfedafb"
+      "checksum": "449a0b115325b23cc96c1d31b8de220e"
     },
     "tests/shinytest/mytest.R": {
-      "checksum": "3a24fc38afb775db35ffa1439896562c"
+      "checksum": "30ed1856efd5e35e7aec4ceabb224d06"
     },
     "tests/shinytest/philtest-expected-linux/001.json": {
       "checksum": "faa628ba437a9e8e4fb4ad4d21cebe88"
     },
     "tests/shinytest/philtest-expected-linux/001.png": {
-      "checksum": "2a7d82b24748d9379f0703a1b7718309"
+      "checksum": "74e43d5bda3cf3c4502346fa91c7303f"
     },
     "tests/shinytest/philtest.R": {
-      "checksum": "069c5d232789f06a21c8e686e445eca7"
+      "checksum": "87a9f018e9fcbaba41f7cdb0cf892cdb"
     },
     "ui.R": {
-      "checksum": "834f34ba0035a63aa4f22051a66ebac1"
+      "checksum": "a061c4f35458fa3ebbebe0368a24c59c"
     }
   },
   "users": null
