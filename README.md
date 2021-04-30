@@ -22,7 +22,7 @@ In order to run `shinytest`, you need to:
 - Activate the renv environment: `renv::activate()`
 - Install dependencies with `renv::restore()`
 - Install the PhantomJS system dependency with `shinytest::installDependencies()` (necessary on some systems)
-- Run tests with `shinytest::testApp(suffix = "linux")`
+- Run tests with `shinytest::testApp(suffix = "linux")` (our only recorded tests are on linux, for this repo)
 - If there are differences, view the differences with
 `shinytest::viewTestDiff(testnames = "mytest")` (for the `mytest` test)
 
