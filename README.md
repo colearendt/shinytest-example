@@ -19,8 +19,8 @@ using and illustrating how `shinytest` works.
 
 In order to run `shinytest`, you need to:
 
+- Activate the renv environment: `renv::activate()`
 - Install dependencies with `renv::restore()`
-- Activate the renv environmetn: `renv::activate()`
 - Run tests with `shinytest::testApp()`
 - If there are differences, view the differences with
 `shinytest::viewTestDiff(testnames = "mytest")` (for the `mytest` test)
