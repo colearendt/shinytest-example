@@ -2325,58 +2325,6 @@
       }
     }
   },
-  "files": {
-    ".github/workflows/rstudio-connect-main.yaml": {
-      "checksum": "c1bec3ecb47911d2e95a4aa2b937d3cd"
-    },
-    ".github/workflows/rstudio-connect-pr.yaml": {
-      "checksum": "317ec364ab49a3c5af98bcbc32de9a9d"
-    },
-    ".github/workflows/run-shinytest.yaml": {
-      "checksum": "02fe5bd18ecd28f6b5f2cba3aa3234e4"
-    },
-    ".github/workflows/sync-
-      "checksum": "e6150505d49d4f0883069f6d2a35d57b"
-    },
-    "README.md": {
-      "checksum": "ebf5641578b58b329f88eee22c832b17"
-    },
-    "server.R": {
-      "checksum": "95b728191757fe193d35fd0892d9835f"
-    },
-    "tests/shinytest.R": {
-      "checksum": "48a5d87647404bbf1f3098c7147cc8af"
-    },
-    "tests/shinytest/mytest-expected-linux/001.download": {
-      "checksum": "753f3b02e02980cec6c6d339d01dde33"
-    },
-    "tests/shinytest/mytest-expected-linux/002.json": {
-      "checksum": "d0d66afcc1a5fe892384de8ecfd22975"
-    },
-    "tests/shinytest/mytest-expected-linux/002.png": {
-      "checksum": "779e93913840b438ee6e8ea314957040"
-    },
-    "tests/shinytest/mytest-expected-linux/003.json": {
-      "checksum": "88ee0a15f0dde5c464441d37dd7e9fc9"
-    },
-    "tests/shinytest/mytest-expected-linux/003.png": {
-      "checksum": "449a0b115325b23cc96c1d31b8de220e"
-    },
-    "tests/shinytest/mytest.R": {
-      "checksum": "30ed1856efd5e35e7aec4ceabb224d06"
-    },
-    "tests/shinytest/philtest-expected-linux/001.json": {
-      "checksum": "faa628ba437a9e8e4fb4ad4d21cebe88"
-    },
-    "tests/shinytest/philtest-expected-linux/001.png": {
-      "checksum": "74e43d5bda3cf3c4502346fa91c7303f"
-    },
-    "tests/shinytest/philtest.R": {
-      "checksum": "87a9f018e9fcbaba41f7cdb0cf892cdb"
-    },
-    "ui.R": {
-      "checksum": "322dbeec82f8487191022e1a1b392010"
-    }
-  },
+  "files": {},
   "users": null
 }
