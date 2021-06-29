@@ -17,7 +17,7 @@ jobs:
       - name: Remove `.Rprofile`
         shell: bash
         run: |
-          rm .Rprofile
+          rm -f .Rprofile
 
       - name: Publish the app
         uses: rstudio/actions/connect-publish@main
